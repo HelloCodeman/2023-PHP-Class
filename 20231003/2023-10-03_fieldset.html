@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .center-fieldset {
-            border: 5px solid;
-            display: flex;
-            justify-content: center;
+        .middle {
+            style="margin: 0 auto;"
+
         }
     </style>
 </head>
 
 <body>
-    <div class="center-fieldset">
+    <div class="container">
         <form>
             <fieldset>
-                <legend>HR報表</legend>
+                <legend>
+                    <h2>HR報表</h2>
+                </legend>
                 <label for="name">日期：</label>
                 <p>
                     <input type="date" value="2023-01-01">
@@ -26,9 +27,9 @@
                 <label for="name">姓名：</label>
                 <input type="text" id="name" name="name" size="5"><br>
                 <label>性別：</label>
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male" name="gender">
                 <label for="male">男</label>
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender">
                 <label for="female">女</label><br>
 
                 <label>婚姻狀態</label>
@@ -37,17 +38,19 @@
                 <input type="radio" name="marriage" value="marriage3">不願告知<br>
 
                 <label for="email">Email：</label>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" size="25"><br>
 
                 <label for="phone">電話：</label>
-                <input type="tel" id="phone" name="phone"><br>
+                <input type="tel" id="phone" name="phone" size="26"><br>
 
                 <label for="address">地址：</label>
-                <input type="add" id="address" name="address"><br>
+                <input type="add" id="address" name="address" size="26"><br>
             </fieldset>
 
             <fieldset>
-                <legend>興趣愛好</legend>
+                <legend>
+                    <h2>興趣愛好</h2>
+                </legend>
                 <label>
                     <input type="checkbox" name="hobby"> 閱讀
                 </label><br>
@@ -73,10 +76,20 @@
                 </label><br>
             </fieldset>
 
-            <input type="submit">
-            <input type="reset">
+            <fieldset>
+                <legend>
+                    <h2>有什麼想說的嗎？</h2>
+                </legend>
+                <textarea name="suggestion" cols="80" rows="10"></textarea>
         </form>
+        </fieldset>
+        </form>
+
     </div>
+    <br>
+    <input type="submit" style="width: 100px; height: 30px;">
+
+    <input type="reset" style="width: 100px; height: 30px;">
 </body>
 
 </html>

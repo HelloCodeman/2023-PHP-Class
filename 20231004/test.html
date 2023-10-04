@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center-fieldset {
+            border: 4px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 添加这一行以垂直居中 */
+            height: 100vh; /* 添加这一行以充满视口高度 */
+        }
+
+        .middle {
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="center-fieldset">
+        <form>
+            <fieldset class="middle">
+                <legend>HR報表</legend>
+                <!-- 输入元素和标签 -->
+            </fieldset>
+            <fieldset class="middle">
+                <legend>興趣愛好</legend>
+                <!-- 复选框输入元素和标签 -->
+            </fieldset>
+            <fieldset class="middle">
+                <h3>有什麼想說的嗎？</h3>
+                <textarea name="suggestion" cols="50" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" size="5">
+            <input type="reset" size="5">
+        </form>
+    </div>
+</body>
+
+</html>
