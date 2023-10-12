@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡單的Navbar示例</title>
+    <style>
+        /* 導覽條的樣式 */
+        .navbar {
+            position: fixed;
+            background-color: #333;
+            /* 背景顏色 */
+            overflow: sticky;
+            font-size: 20px;
+        }
+
+        /* 導覽條內的連結樣式 */
+        .navbar a {
+            float: left;
+            display: inline-flexbox;
+            color: rgb(255, 255, 255);
+            /* 文本顏色 */
+            text-align: center;
+            padding: 15px 199.7px;
+            /* 上下左右填充 */
+            text-decoration: none;
+            /* 移除底線 */
+            font-size: 20px;
+        }
+
+        /* 鼠標懸停時的連結樣式 */
+        .navbar a:hover {
+            background-color: #ddd;
+            /* 鼠標懸停時的背景顏色 */
+            color: rgb(116, 45, 45);
+            /* 鼠標懸停時的文本顏色 */
+            font-weight: bolder;
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        body {
+            background-color: #e3e3e3;
+            /* 背景颜色 */
+        }
+
+        .container {
+            /* width: 300px; */
+            /* height: 300px; */
+            width: 100%;
+            height: 95vh;
+        }
+
+        table,
+        tr,
+        td,
+        iframe {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .table-image {
+            width: 550px;
+            /* 设置图片宽度 */
+            height: 550px;
+            /* 设置图片高度 */
+        }
+
+        .tablea:hover img {
+            opacity: 0.8;
+            transform: translateY(-10px);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 導覽條 -->
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#home">About</a>
+        <a href="#Youtube">Other</a>
+    </div>
+
+    <br id="home">
+    <!-- 內容部分 -->
+    <div class="container">
+
+        <form>
+            <br>
+            <fieldset>
+                <!-- 這裡可以放置網站內容 -->
+                <legend>
+                    <h2 id="Movie">變形</h2>
+
+                </legend>
+                <table>
+                    <tr>
+                        <td class="tablea"><img src="/20231011/01.jpg" class="table-image"><br>歷久不衰的傳奇！《灌籃高手》</td>
+                        <td class="tablea"><img src="/20231011/02.jpg" class="table-image"><br>還沒入坑嗎？《鬼滅之刃》</td>
+                        <td class="tablea"><img src="/20231011/03.jpg" class="table-image"><br>長大再看一遍才懂！《神隱少女》</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
