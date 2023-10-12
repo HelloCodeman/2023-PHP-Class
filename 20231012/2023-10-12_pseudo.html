@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尾牙抽獎表格</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>尾牙抽獎表格</title>
+        <style>
+            table,
+            tr,
+            th,
+            td {
+                border: 2px solid rgb(255, 193, 193);
+                border-collapse: collapse;
+                text-align: center;
+                margin: auto;
+            }
+
+            table {
+                width: 80%;
+            }
+
+            /* th,td {
+                width: 20%;
+            } */
+            .money{
+                text-align: center;
+            }
+            .money::before{
+                content: "$ ";
+            }
+            .money::after{
+                content: " 元";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <table>
+                <tr>
+                    <th width="15%">姓名</th>
+                    <th width="20%">福利</th>
+                    <th width="10%">備註</th>
+                </tr>
+                <tr>
+                    <td>張O恆</td>
+                    <td class="money">1000</td>
+                    <td>安慰獎</td>
+                </tr>
+                <tr>
+                    <td>李O勤</td>
+                    <td class="money">6000</td>
+                    <td>三獎</td>
+                </tr>
+                <tr>
+                    <td>陳O陽</td>
+                    <td>iPhone 15 Pro</td>
+                    <td>頭獎</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
