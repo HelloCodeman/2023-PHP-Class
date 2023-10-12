@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic selector</title>
+</head>
+<style>
+    h2 {
+        color: red;
+    }
+
+    #myP {
+        color: blue;
+    }
+
+    .classP {
+        color: brown;
+    }
+
+    /* > 組合使用 下一層 */
+
+    .box>p {
+        color: chartreuse;
+    }
+
+    .blue {
+        color: aquamarine;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- element -->
+        <h2>basic selector</h2>
+
+        <!-- id -->
+        <p id="myP" class="classP">Lorem ipsum dolor sit amet.</p>
+
+        <!-- class -->
+        <p class="classP"> Lorem ipsum dolor sit amet.</p>
+
+        <div class="box blue">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <!-- 選擇器 -->
+        <!-- 1. css 越靠近 優先 -->
+        <!-- 2. 精準指定 優先 -->
+        <!-- 權重 -->
+    </div>
+</body>
+
+</html>

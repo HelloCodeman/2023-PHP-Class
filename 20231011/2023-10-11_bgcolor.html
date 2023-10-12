@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        /* width: 300px; */
+        /* height: 300px; */
+        width: 80%;
+        height: 95vh;
+        margin: auto;
+    }
+
+    .box1 {
+        background-color: antiquewhite;
+        background-image: url(./01.jpg);
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+
+    .box2 {
+        width: 20%;
+        background-color: rgb(134, 193, 235);
+        background-image: url(./01.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .box3 {
+        background-color: rgb(255, 188, 188);
+        background-image: url(./01.jpg), url(./02.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom, left top;
+    }
+</style>
+
+<body>
+    
+    <div class="container box1"></div>
+    <div class="container box2"></div>
+    <div class="container box3"></div>
+
+</body>
+
+</html>
