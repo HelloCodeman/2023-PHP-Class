@@ -59,7 +59,7 @@ for($j=1;$j<=9;$j++){
     $nine[]= " $j * $i = ".($j * $i) ;
     }
 }
-// print_r($nine);
+print_r($nine);
 
 echo "<table border='2'>";
 
