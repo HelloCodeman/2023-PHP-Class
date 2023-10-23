@@ -21,6 +21,8 @@ echo $n . ",";
 
 */
 
+echo "<br>";
+
 $num=[];
 
 while(count($num)<6){
