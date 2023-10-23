@@ -1,3 +1,5 @@
+<h2>建立一個學生成績陣列</h2>
+
 <?php
 
 /*
@@ -44,3 +46,38 @@ foreach ($student_grades as $student => $grades) {
 }
 echo "</table>";
 ?>
+
+<h2>利用程式來產生陣列</h2>
+
+<?php
+
+$nine=[];
+
+for($j=1;$j<=9;$j++){
+
+    for($i=1;$i<=9;$i++){
+    $nine[]= " $j * $i = ".($j * $i) ;
+    }
+}
+// print_r($nine);
+
+echo "<table border='2'>";
+
+foreach($nine as $idx => $value){
+    if($idx%9==0){
+
+    echo "<tr>";
+    echo "<td>$value</td>";
+    }else if($idx%9==8){
+        echo "<td>$value</td>
+        </td>";
+    }else{
+        echo "<td>$value</td>";
+    }
+
+}
+echo "</table>";
+
+?>
+
+  
