@@ -64,3 +64,63 @@ if($days>0){
     }
 
 ?>
+
+<h2>利用date()函式的格式化參數，完成以下的日期格式呈現</h2>
+
+<li>2021/10/05</li>
+<li>10月5日 Tuesday</li>
+<li>2021-10-5 12:9:5</li>
+<li>2021-10-5 12:09:05</li>
+<li>今天是西元2021年10月5日 上班日(或假日)</li>
+<br>
+
+<?php
+
+$today = date("2021/10/05");  
+echo $today;
+echo "<br>";
+echo date("10月5日 1");
+echo "<br>";
+echo date("Y-m-d H:i:s");
+echo "<br>";
+echo date("Y-n-j G:i:s");
+echo "<br>";
+
+echo date("今天是西元Y年m月d日");
+
+if(date("N")<=5){
+    echo "上班日";
+}else{
+    echo "假日";
+}
+?>
+
+<h2>利用迴圈來計算連續五個周一的日期</h2>
+
+<li>2021-10-04 星期一</li>
+<li>2021-10-11 星期一</li>
+<li>2021-10-18 星期一</li>
+<li>2021-10-25 星期一</li>
+<li>2021-11-01 星期一</li>
+
+<?php
+
+/*
+$date=strtotime('today');
+$mondays=array();
+*/
+
+echo "<br>";
+
+$todayWeek=date("N");
+$diff=1-$todayWeek;
+$lastMonday=strtotime("$diff days");
+$nextMonday=date("Y-m-d",strtotime("+1 week",$lastMonday));
+
+for($i=0;$i<5;$i++){
+    $nextMonday=date("Y-m-d l",strtotime("+1 week",strtotime($nextMonday)));
+    echo $nextMonday;
+    echo "<br>";
+}
+
+?>
