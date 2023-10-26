@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1111光棍節</title>
     <style>
+        /* 導覽條的樣式 */
+        .navbar {
+            height: 60px;
+            position: fixed;
+            background-color: #333;
+            top: 0;
+            /* 将导航栏固定在屏幕顶部 */
+            left: 0;
+            right: 0;
+            /* 背景顏色 */
+            /* overflow: sticky; */
+            font-size: 20px;
+            z-index: 100;
+        }
+
         /* 導覽條內的連結樣式 */
         .navbar a {
             float: left;
@@ -13,20 +28,22 @@
             color: rgb(255, 255, 255);
             /* 文本顏色 */
             text-align: center;
-            padding: 30px 209.5px;
+            padding: 15px 219.2px;
             /* 上下左右填充 */
             text-decoration: none;
             /* 移除底線 */
-            font-size: 35px;
+            font-size: 20px;
         }
 
         /* 鼠標懸停時的連結樣式 */
         .navbar a:hover {
-            background-color: #ddd;
+            height: 60px;
             /* 鼠標懸停時的背景顏色 */
-            color: black;
+            color: rgb(0, 0, 0);
             /* 鼠標懸停時的文本顏色 */
             font-weight: bolder;
+            font-size: 20px;
+            opacity: 1.3;
         }
 
         .container {
@@ -42,7 +59,7 @@
             margin: auto;
             position: relative;
             /* 使用相对定位 */
-            top: 150px;
+            top: 50px;
             /* 下移 100px */
             background-color: rgb(55, 62, 104);
         }
@@ -54,24 +71,17 @@
             flex-wrap: wrap;
             height: 70vh;
             /* 主軸 row 置中  */
-            justify-content: space-evenly;
+            justify-content: space-around;
             /* 參考軸 column*/
-            align-items: center;
+            /* align-items: center; */
             width: 100%;
             margin: auto;
             position: relative;
             /* 使用相对定位 */
-            top: 150px;
-            /* 下移 100px */
+            top: 20px;
+            /* 下移 0px */
             background-color: rgb(108, 76, 116);
-            margin-top: 10px;
-        }
 
-        /* 導覽條的樣式 */
-        .navbar {
-            position: fixed;
-            background-color: #333;
-            /* 背景顏色 */
         }
 
         body {
@@ -81,60 +91,69 @@
 
         .item {
             width: 33%;
-            height: 500px;
-            padding: top 0;
+            height: 550px;
             text-align: center;
             color: aliceblue;
         }
 
         .item2 {
             width: 33%;
-            height: 500px;
-            padding-top: 50px;
+            height: 250px;
+            margin-top: 30px;
             text-align: center;
             color: aliceblue;
         }
 
         img {
             width: 500px;
-            height: 480px;
+            height: 450px;
             border: 2px solid black;
         }
 
         .img2 {
             width: 500px;
-            height: 180px;
+            height: 200px;
         }
+
+        .back2top {
+            text-align: center;
+            position: absolute;
+            top: 1380px;
+            /* 垂直位置坐标 */
+            left: 820px;
+            /* 水平位置坐标 */
+            }
     </style>
 </head>
 
 <body>
     <!-- 導覽條 -->
     <div class="navbar">
-        <a href="#home">光棍節不光棍</a>
+        <a href="#Home">光棍節不光棍</a>
         <a href="#BF">出租一日男友</a>
         <a href="#GF">出租一日女友</a>
     </div>
+    <a id="top"></a>
+    <br id="BF">
     <!-- 出租男友 -->
     <div class="container">
-        <div class="item"><img src="./pics/athlethman.jpg"><br>極致鮮肉<br>體力好陪你逛街走路萬里長征<br>1000元/day</a></div>
+        <div class="item"><img src="./pics/athlethman.jpg"><br>極致鮮肉<br>體力好陪你逛街萬里長征<br>1000元/day</a></div>
         <div class="item"><img src="./pics/blackman.jpg"><br>黑人型男<br>異國風情體驗不同文化<br>1000元/day</a></div>
         <div class="item"><img src="./pics/handsome1.jpg"><br>溫柔大叔<br>細心體貼男友感十足<br>1000元/day</a></div>
     </div>
     <!-- 出租女友 -->
+    <br id="GF">
     <div class="container2">
-        <div class="item2"><img src="./pics/御姊.jpg" class="img2"><br>高冷御姊<br>悶騷不廢話冰山美人<br>1000元/day</a></div>
-        <div class="item2"><img src="./pics/戶外運動.jpg" class="img2"><br>清新女力<br>新世代女性特質<br>1000元/day</a></div>
-        <div class="item2"><img src="./pics/清純姊姊.jpg" class="img2"><br>可愛女孩<br>女友感十足<br>1000元/day</a></div>
-        <div class="item"><img src="./pics/御姊.jpg" class="img2"><br>高冷御姊<br>悶騷不廢話冰山美人<br>1000元/day</a></div>
-        <div class="item"><img src="./pics/戶外運動.jpg" class="img2"><br>清新女力<br>新世代女性特質<br>1000元/day</a></div>
-        <div class="item"><img src="./pics/清純姊姊.jpg" class="img2"><br>可愛女孩<br>女友感十足<br>1000元/day</a></div>
-
+        <div class="item2"><img src="./pics/御姊.jpg" class="img2"></div>
+        <div class="item2"><img src="./pics/戶外運動.jpg" class="img2"></div>
+        <div class="item2"><img src="./pics/清純姊姊.jpg" class="img2"></div>
+        <div class="item2"><img src="./pics/御姊.jpg" class="img2"></div>
+        <div class="item"><img src="./pics/戶外運動.jpg" class="img2"><br><br>高冷御姐、清純鄰家女孩<br>各種風格任君選包滿意 價另議</div>
+        <div class="item2"><img src="./pics/清純姊姊.jpg" class="img2"></div>
     </div>
-
-
-
-
+    <br>
+    <br>
+    <br><a href="#top" class="back2top">回頂端</a></div>
 </body>
 
 </html>
