@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /*宣告flexbox */
+            display: flex;
+            /*橫row(default) 直column */
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* 主軸 row 置中 */
+            justify-content: space-evenly;
+            /* 參考軸 column */
+            align-items: center;
+            width: 25%;
+            height: 50vh;
+            background-color: rgb(255, 216, 158);
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        .container>div {
+            background-color: rgb(148, 177, 246);
+            width: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 150px;
+            width: 130px;
+            font-size: 100px;
+
+        }
+
+        .item {
+            width: 30%;
+            height: 150px;
+            background-color: lightgray;
+        }
+
+        .item-0 {
+            background-color: rgb(148, 177, 246);
+        }
+
+        .bg-colorgreen {
+            background-color: rgb(33, 228, 8);
+        }
+
+        .bg-colorblue {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(22, 22, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item bg-colorgreen">O</div>
+        <div><br></div>
+        <div><br></div>
+
+        <div><br></div>
+        <div>O</div>
+        <div class="item bg-colorgreen"><br></div>
+
+        <div><br></div>
+        <div><br></div>
+        <div class="item bg-colorgreen">O</div>
+
+    </div>
+</body>
+
+</html>
