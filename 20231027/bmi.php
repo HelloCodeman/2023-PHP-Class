@@ -9,6 +9,7 @@
 
 <body>
     <h1>計算BMI</h1>
+    <!-- 體重(kg)/身高(m)的平方 -->
     <?php
     if (!isset($_GET['bmi'])) {
 
@@ -30,8 +31,6 @@
                 <input type="submit" value="計算BMI">
                 <input type="reset" value="重置">
             </div>
-
-            <!-- 體重(kg)/身高(m)的平方 -->
 
         </form>
 
