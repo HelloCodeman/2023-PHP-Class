@@ -48,12 +48,15 @@
     <div class=" login-block">
 
         <?php
-        if (isset($_GET['m'])) {
-            echo "<span style='color:red'>" . $_GET['m'] . "</span>";
+
+        session_start();
+
+        if (isset($_SESSION['error'])) {
+            echo "<span style='color:red'>" . $_SESSION['error'] . "</span>";
         }
 
-        if (isset($_GET['login']) && $_GET['login'] == 1) {
-            echo "歡迎 Welcome!";
+        if (isset($_SESSION['login']) && !empty($_SESSION['login'])) {
+            echo $_SESSION['login']."歡迎 Welcome!";
         } else {
 
             ?>
