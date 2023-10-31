@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .login-block {
 
@@ -45,11 +46,13 @@
 </head>
 
 <body>
+    <?php
+    include_once "header.php";
+    ?>
+
     <div class=" login-block">
 
         <?php
-
-        session_start();
 
         if (isset($_COOKIE['error'])) {
             echo "<span style='color:red'>" . $_COOKIE['error'] . "</span>";
