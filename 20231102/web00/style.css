@@ -13,12 +13,9 @@ body {}
     background-color: rgb(255, 255, 255);
     margin: auto;
     border: 1px solid black;
-    border-bottom: 0;
 }
 
-.header > img {
-    width: 100%
-}
+.header>img {}
 
 .container {
     display: flex;
@@ -30,24 +27,80 @@ body {}
 .aside {
     width: 215px;
     height: calc(768px - 65px - 20px);
-    background-color: rgb(189, 166, 166);
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-right: 0;
-
+    display: flex;
+    flex-direction: column;
 }
+
+.aside-header {
+    height: calc(100% - 25px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-header>.box {
+    width: 200px;
+    height: 35px;
+    background-image: url('/20231102/web00/image/menu1.png');
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.aside-header>.box a {
+    text-decoration: none;
+}
+
+.aside-title {
+    text-align: center;
+    text-decoration: underline black;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF00FF;
+    margin-bottom: 10px;
+}
+
+.aside-footer {
+    height: 25px;
+    font-size: 16px;
+    font-weight: medium;
+    color: #000000;
+    font-family: '標楷體';
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 要往下掉要去.aside-header那裡設置長度 */
 
 .main {
     width: calc(1024px - 215px);
     height: calc(768px - 65px - 20px);
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
+}
+
+.main-header {
+    height: 29px;
+    width: 770px;
+    font-size: 24px;
+    font-family: '標楷體';
+    color: blue;
+}
+
+.main-footer {
+    height: calc(100% - 29px);
+    /* background-color: lightpink; */
 }
 
 .footer {
     border-top: 0;
     width: 1024px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     margin: auto;
     border: 1px solid black;
 
