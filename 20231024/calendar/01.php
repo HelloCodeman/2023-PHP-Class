@@ -60,13 +60,13 @@
     </ul>
     <?php
     echo "<h3>";
-    echo date("西元Y年1月");
+    echo date("西元Y年2月");
     echo "</h3>";
     $thisMonth = date("Y");
-    $thisFirstDay = date("Y-1-1");
+    $thisFirstDay = date("Y-2-1");
     $thisFirstDate = date('w', strtotime($thisFirstDay));
     $thisMonthDays = date("t");
-    $thisLastDay = date("Y-1-$thisMonthDays");
+    $thisLastDay = date("Y-2-$thisMonthDays");
     $weeks = ceil(($thisMonthDays + $thisFirstDate) / 7);
     $firstCell = date("Y-m-d", strtotime("-$thisFirstDate days", strtotime($thisFirstDay)));
     echo "<table>";
