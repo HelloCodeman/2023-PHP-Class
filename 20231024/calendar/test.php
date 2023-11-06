@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2024月曆</title>
     <style>
         body {
             text-align: center;
             background-color: #f7f7f7;
+            /* 背景色 */
             font-family: Arial, sans-serif;
+            /* 字體 */
             margin: 0;
             padding: 0;
         }
@@ -18,27 +20,39 @@
             border-collapse: collapse;
             border: 3px double #999;
             margin: 20px auto;
+            /* 調整邊距 */
             background-color: #fff;
+            /* 表格背景色 */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* 表格陰影效果 */
         }
 
         td {
             border: 1px solid #999;
-            padding: 40px 80px;
+            padding: 10px 20px;
             text-align: center;
-            font-size: 38px;
+            font-size: 18px;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
-            margin: 5px;
-
+            margin: 20px;
         }
 
         ul li {
             display: inline-block;
-            font-size: 14px;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        h3 {
+            background-color: #3498db;
+            /* 標題背景色 */
+            color: #fff;
+            /* 標題文字顏色 */
+            padding: 10px;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -60,24 +74,24 @@
     </ul>
     <?php
     echo "<h3>";
-    echo date("西元Y年5月");
+    echo date("西元Y年m月");
     echo "</h3>";
     $thisMonth = date("Y");
-    $thisFirstDay = date("Y-5-1");
+    $thisFirstDay = date("Y-m-1");
     $thisFirstDate = date('w', strtotime($thisFirstDay));
     $thisMonthDays = date("t");
-    $thisLastDay = date("Y-5-$thisMonthDays");
+    $thisLastDay = date("Y-m-$thisMonthDays");
     $weeks = ceil(($thisMonthDays + $thisFirstDate) / 7);
     $firstCell = date("Y-m-d", strtotime("-$thisFirstDate days", strtotime($thisFirstDay)));
     echo "<table>";
     echo "<tr>";
-    echo "<td>日</td>";
-    echo "<td>一</td>";
-    echo "<td>二</td>";
-    echo "<td>三</td>";
-    echo "<td>四</td>";
-    echo "<td>五</td>";
-    echo "<td>六</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>日</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>一</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>二</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>三</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>四</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>五</td>";
+    echo "<td style='background-color: #3498db; color: #fff;'>六</td>";
     echo "</tr>";
     for ($i = 0; $i < $weeks; $i++) {
         echo "<tr>";
@@ -85,7 +99,7 @@
             $addDays = 7 * $i + $j;
             $thisCellDate = strtotime("+$addDays days", strtotime($firstCell));
             if (date('w', $thisCellDate) == 0 || date('w', $thisCellDate) == 6) {
-                echo "<td style='background:pink'>";
+                echo "<td style='background: pink;'>";
 
             } else {
                 echo "<td>";
@@ -100,6 +114,7 @@
 
     echo "</table>";
     ?>
+
 </body>
 
 </html>
