@@ -14,6 +14,34 @@
             padding: 0;
         }
 
+        .navbar {
+            background-color: #333;
+            /* 背景颜色 */
+            color: #fff;
+            /* 文字颜色 */
+            padding: 10px;
+            /* 内边距 */
+            display: flex;
+            justify-content: space-between;
+            /* 将链接放在导航栏两侧 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            /* 去掉链接下划线 */
+            color: #fff;
+            /* 链接颜色 */
+            margin: 0 10px;
+            /* 链接之间的间距 */
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            /* 鼠标悬停时显示下划线 */
+        }
+
         table {
             border-collapse: collapse;
             border: 3px double #999;
@@ -24,7 +52,7 @@
 
         td {
             border: 1px solid #999;
-            padding: 40px 80px;
+            padding: 35px 75px;
             text-align: center;
             font-size: 38px;
         }
@@ -44,24 +72,20 @@
 </head>
 
 <body>
-    <ul>
-        <li><a href="01.php">一月</a></li>
-        <li><a href="02.php">二月</a></li>
-        <li><a href="03.php">三月</a></li>
-        <li><a href="04.php">四月</a></li>
-        <li><a href="05.php">五月</a></li>
-        <li><a href="06.php">六月</a></li>
-        <li><a href="07.php">七月</a></li>
-        <li><a href="08.php">八月</a></li>
-        <li><a href="09.php">九月</a></li>
-        <li><a href="10.php">十月</a></li>
-        <li><a href="11.php">十一月</a></li>
-        <li><a href="12.php">十二月</a></li>
-    </ul>
+
+    <div class="navbar">
+        <a href="index.php?year=2024&month=10">上一個月</a>
+        <h3>
+            <?php
+            $currentYear = date("Y");
+            $currentMonth = date("m");
+            echo "西元" . $currentYear . "年" . $currentMonth . "月";
+            ?>
+        </h3>
+        <a href="index.php?year=2024&month=12">下一個月</a>
+    </div>
+
     <?php
-    echo "<h3>";
-    echo date("西元Y年m月");
-    echo "</h3>";
     $thisMonth = date("Y");
     $thisFirstDay = date("Y-m-1");
     $thisFirstDate = date('w', strtotime($thisFirstDay));
@@ -84,21 +108,28 @@
         for ($j = 0; $j < 7; $j++) {
             $addDays = 7 * $i + $j;
             $thisCellDate = strtotime("+$addDays days", strtotime($firstCell));
-            if (date('w', $thisCellDate) == 0 || date('w', $thisCellDate) == 6) {
+            if (
+                date('w', $thisCellDate) == 0 ||
+                date('w', $thisCellDate) == 6
+            ) {
                 echo "<td style='background:pink'>";
-
             } else {
                 echo "<td>";
             }
-            if (date("m", $thisCellDate) == date("m", strtotime($thisFirstDay))) {
+            if (
+                date(
+                    "m",
+                    $thisCellDate
+                ) == date("m", strtotime($thisFirstDay))
+            ) {
                 echo date("j", $thisCellDate);
             }
             echo "</td>";
         }
         echo "</tr>";
     }
-
     echo "</table>";
+
     ?>
 
 </body>

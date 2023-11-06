@@ -33,7 +33,6 @@
             list-style-type: none;
             padding: 0;
             margin: 5px;
-
         }
 
         ul li {
