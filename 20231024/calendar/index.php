@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上月曆</title>
     <style>
+        body {
+            background-image: url('January.jpg');
+            background-size: auto;
+        }
+
         .navbar {
             background-color: #333;
             /* 背景顏色 */
@@ -40,12 +45,22 @@
             border-radius: 1px;
         }
 
+        .week {
+            border: 3px solid #999;
+            padding: 28px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+            font-family: '標楷體', sans-serif;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
         td {
             border: 1px solid #999;
             padding: 30px;
             text-align: center;
             font-size: 28px;
-            border-radius: 15px;
+            border-radius: 10px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
@@ -62,9 +77,6 @@
         $year = date("Y");
     }
 
-    echo "<h3 style='text-align:center'>";
-    echo date("西元{$year}年{$month}月");
-    echo "</h3>";
     $thisFirstDay = date("{$year}-{$month}-1");
     $thisFirstDate = date('w', strtotime($thisFirstDay));
     $thisMonthDays = date("t");
@@ -92,19 +104,25 @@
 
         ?>
         <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">上一個月</a>
+        <?php
+        echo "<h3 style='text-align:center'>";
+        echo date("西元{$year}年{$month}月");
+        echo "</h3>";
+        ?>
+        <!-- <a href="./index.php">今天Today</a> -->
         <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">下一個月</a>
     </div>
     <br>
     <br>
     <table>
         <tr>
-            <td>日</td>
-            <td>一</td>
-            <td>二</td>
-            <td>三</td>
-            <td>四</td>
-            <td>五</td>
-            <td>六</td>
+            <td class="week">日<br>Sun.</td>
+            <td class="week">一<br>Mon.</td>
+            <td class="week">二<br>Tue.</td>
+            <td class="week">三<br>Wed.</td>
+            <td class="week">四<br>Thu.</td>
+            <td class="week">五<br>Fri.</td>
+            <td class="week">六<br>Sat.</td>
         </tr>
         <?php
         for ($i = 0; $i < $weeks; $i++) {
@@ -126,6 +144,31 @@
         }
         echo "</table>";
         ?>
+
+        <?php
+        $monthImages = array(
+            "January.jpg",
+            "February.jpg",
+            "March.jpg",
+            "April.jpg",
+            "May.jpg",
+            "June.jpg",
+            "July.jpg",
+            "August.jpg",
+            "September.jpg",
+            "October.jpg",
+            "November.jpg",
+            "December.jpg"
+        );
+
+        $backgroundImage = $monthImages[$month - 1];
+        // 根據月份選擇背景圖片
+        
+        echo "<style>";
+        echo "body { background-image: url('$backgroundImage'); background-size: cover; }";
+        echo "</style>";
+        ?>
+
 
 </body>
 
