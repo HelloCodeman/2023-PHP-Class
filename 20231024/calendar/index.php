@@ -19,7 +19,7 @@
             padding: 10px;
             /* 內邊距 */
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             /* 將連結放在Navbar兩側 */
             align-items: center;
             /* 垂直置中 */
@@ -35,7 +35,10 @@
         }
 
         .navbar a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            /* background-color: lemonchiffon; */
+            color: rgb(285, 155, 155);
+            transform: scale(1.5);
         }
 
         table {
@@ -46,7 +49,8 @@
         }
 
         .week {
-            border: 3px solid #999;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid #999;
             padding: 28px;
             text-align: center;
             font-weight: bolder;
@@ -62,6 +66,12 @@
             font-size: 28px;
             border-radius: 10px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        td:hover {
+            text-align: center;
+            transform: scale(1.1);
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -103,14 +113,14 @@
         }
 
         ?>
-        <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">上一個月</a>
+        <a href="?year=<?= $prevYear; ?>&month=<?= $prev; ?>">&nbsp;&nbsp;&nbsp;&nbsp;上一個月<br>Previous Month</a>
         <?php
-        echo "<h3 style='text-align:center'>";
+        echo "<h1 style='text-align:center'>";
         echo date("西元{$year}年{$month}月");
-        echo "</h3>";
+        echo "</h1>";
         ?>
         <!-- <a href="./index.php">今天Today</a> -->
-        <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">下一個月</a>
+        <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">&nbsp;&nbsp;下一個月<br>Next Month</a>
     </div>
     <br>
     <br>
