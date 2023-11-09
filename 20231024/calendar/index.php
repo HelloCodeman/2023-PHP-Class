@@ -73,12 +73,15 @@
             transform: scale(1.1);
             opacity: 0.9;
         }
+
+        .date-selector {
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <?php
-
     if (isset($_GET['month']) && isset($_GET['year'])) {
         $month = $_GET['month'];
         $year = $_GET['year'];
@@ -179,6 +182,30 @@
         echo "</style>";
         ?>
 
+        <div class="date-selector">
+            <form method="get">
+                <label for="year">年：</label>
+                <select id="year" name="year">
+                    <?php
+                    $currentYear = date("Y");
+                    for ($i = $currentYear - 10; $i <= $currentYear + 10; $i++) {
+                        $selected = ($i == $year) ? "selected" : "";
+                        echo "<option value='$i' $selected>$i</option>";
+                    }
+                    ?>
+                </select>
+                <label for="month">月：</label>
+                <select id="month" name="month">
+                    <?php
+                    for ($i = 1; $i <= 12; $i++) {
+                        $selected = ($i == $month) ? "selected" : "";
+                        echo "<option value='$i' $selected>$i</option>";
+                    }
+                    ?>
+                </select>
+                <input type="submit" value="顯示日期">
+            </form>
+        </div>
 
 </body>
 
