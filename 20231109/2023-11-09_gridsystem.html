@@ -10,7 +10,7 @@
 </head>
 <style>
     .my-height-30 {
-        height: 30vh;
+        height: 100%;
         background-color: lightblue;
     }
 
@@ -20,60 +20,65 @@
     }
 
     .bg-blue {
-        background-color: blue;
+        background-color: rgb(86, 86, 117);
     }
 </style>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col my-height-30 bg-blue text-center">
-                <img src="/20231102/web00/image/0102.jpg" width="1890px" height="250px">
+            <div class="col my-height-30 bg-blue p-0">
+                <img src="/20231102/web00/image/0102.jpg" width="1920px" height="250px">
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-6 my-height-30 bg-danger text-center">
+            <div class="col-6 my-height-30 bg-danger text-center p-0">
                 <img src="/20231102/web00/image/0102.jpg" alt="">
             </div>
-            <div class="col-6 my-height-30 bg-blue text-center">
-                <img src="/20231102/web00/image/0102.jpg" alt="">
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-4 my-height-30 bg-danger ">
-                <img src="/20231102/web00/image/0102.jpg" alt="">
-            </div>
-            <div class="col-4 my-height-30 bg-blue">
-                <img src="/20231102/web00/image/0102.jpg" alt="">
-            </div>
-            <div class="col-4 my-height-30 bg-danger">
+            <div class="col-6 my-height-30 bg-blue text-center p-0">
                 <img src="/20231102/web00/image/0102.jpg" alt="">
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row mb-3">
-            <div class="col-8 my-height-50 bg-danger p-5">
-                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/V8HTAT5CQeY?si=MLJKvOqMHgxqG2EV"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="col-4 my-height-50 bg-blue p-5 align-center ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio officiis alias velit eum, sint
-                impedit et voluptates repudiandae adipisci.
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-4 my-height-30 p-0 bg-danger ">
+                    <img src="/20231102/web00/image/0102.jpg" width="1920px" height="250px" alt="">
+                </div>
+                <div class="col-4 my-height-30 p-0 bg-blue">
+                    <img src="/20231102/web00/image/0102.jpg" width="1920px" height="250px" alt="">
+                </div>
+                <div class="col-4 my-height-30 p-0 bg-danger">
+                    <img src="/20231102/web00/image/0102.jpg" width="1920px" height="250px" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    </div>
-
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-8 my-height-50 p-5">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/V8HTAT5CQeY?si=MLJKvOqMHgxqG2EV"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4 my-height-50 bg-blue p-5">
+                    <div class="w-100 h-100 d-flex flex-column justify-content-center">
+                        <h3 class="text-center">
+                            洛基2 Loki2
+                        </h3>
+                        <br>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio officiis alias velit
+                            eum,sint impedit et voluptates repudiandae adipisci.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
