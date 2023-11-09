@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上月曆</title>
     <style>
+        .date-selector {
+            align-items: center !important;
+        }
+
         body {
             background-image: url('January.jpg');
             background-size: auto;
@@ -73,10 +77,6 @@
             transform: scale(1.1);
             opacity: 0.9;
         }
-
-        .date-selector {
-            align-items: center;
-        }
     </style>
 </head>
 
@@ -122,10 +122,8 @@
         echo date("西元{$year}年{$month}月");
         echo "</h1>";
         ?>
-        <!-- <a href="./index.php">今天Today</a> -->
         <a href="?year=<?= $nextYear; ?>&month=<?= $next; ?>">&nbsp;&nbsp;下一個月<br>Next Month</a>
     </div>
-    <br>
     <br>
     <table>
         <tr>
@@ -181,31 +179,33 @@
         echo "body { background-image: url('$backgroundImage'); background-size: cover; }";
         echo "</style>";
         ?>
-
-        <div class="date-selector">
-            <form method="get">
-                <label for="year">年：</label>
-                <select id="year" name="year">
-                    <?php
-                    $currentYear = date("Y");
-                    for ($i = $currentYear - 10; $i <= $currentYear + 10; $i++) {
-                        $selected = ($i == $year) ? "selected" : "";
-                        echo "<option value='$i' $selected>$i</option>";
-                    }
-                    ?>
-                </select>
-                <label for="month">月：</label>
-                <select id="month" name="month">
-                    <?php
-                    for ($i = 1; $i <= 12; $i++) {
-                        $selected = ($i == $month) ? "selected" : "";
-                        echo "<option value='$i' $selected>$i</option>";
-                    }
-                    ?>
-                </select>
-                <input type="submit" value="顯示日期">
-            </form>
-        </div>
+    </table>
+    <br>
+    <div class="navbar">
+        <form method="get">
+            <label for="year">年：</label>
+            <select id="year" name="year">
+                <?php
+                $currentYear = date("Y");
+                for ($i = $currentYear - 2023; $i <= $currentYear + 7977; $i++) {
+                    $selected = ($i == $year) ? "selected" : "";
+                    echo "<option value='$i' $selected>$i</option>";
+                }
+                ?>
+            </select>
+            <label for="month">月：</label>
+            <select id="month" name="month">
+                <?php
+                for ($i = 1; $i <= 12; $i++) {
+                    $selected = ($i == $month) ? "selected" : "";
+                    echo "<option value='$i' $selected>$i</option>";
+                }
+                ?>
+            </select>
+            <input type="submit" value="顯示該月">
+            <a href="./index.php">回到今天</a>
+        </form>
+    </div>
 
 </body>
 
