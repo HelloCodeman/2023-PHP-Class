@@ -33,11 +33,12 @@
             padding: 10px;
             /* 內邊距 */
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             /* 將連結放在Navbar兩側 */
             align-items: center;
             /* 垂直置中 */
             width: 20vw;
+            margin: 0 auto;
         }
 
         .navbar a {
