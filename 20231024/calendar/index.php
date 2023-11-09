@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上月曆</title>
     <style>
-        .date-selector {
-            align-items: center !important;
-        }
-
         body {
             background-image: url('January.jpg');
             background-size: auto;
@@ -27,6 +23,21 @@
             /* 將連結放在Navbar兩側 */
             align-items: center;
             /* 垂直置中 */
+        }
+
+        .navbar2 {
+            background-color: #333;
+            /* 背景顏色 */
+            color: #fff;
+            /* 文字顏色 */
+            padding: 10px;
+            /* 內邊距 */
+            display: flex;
+            justify-content: space-around;
+            /* 將連結放在Navbar兩側 */
+            align-items: center;
+            /* 垂直置中 */
+            width: 20vw;
         }
 
         .navbar a {
@@ -181,7 +192,7 @@
         ?>
     </table>
     <br>
-    <div class="navbar">
+    <div class="navbar2">
         <form method="get">
             <label for="year">年：</label>
             <select id="year" name="year">
