@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,10 +14,17 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>首頁</title>
+    <style>
+        .container {
+            text-align: center;
+            font-size: 110px;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>味全商城</h1>
+    <h1 class="container">味全商城</h1>
     <header class="nav">
         <div class="nav-item col-4"></div>
         <div class="nav-item col-4">
@@ -24,10 +35,19 @@
             </ul>
         </div>
         <div class="nav-item col-4">
-            <a href="reg.php" class="btn btn-primary mx-2">註冊</a>
-            <a href="login.php" class="btn btn-primary mx-2">登入</a>
-            <div></div>
+            <?php
+            if (isset($_SESSION['user'])) {
+                echo "歡迎光臨 " . $_SESSION['user'];
+                echo "<a href='logout.php' class='btn btn-info mx-2'>登出</a>";
+            } else {
+                ?>
+                <a href="reg.php" class="btn btn-primary mx-2">註冊</a>
+                <a href="login_form.php" class="btn btn-success mx-2">登入</a>
+                <?php
+            }
+            ?>
         </div>
+    </header>
 </body>
 
 </html>
