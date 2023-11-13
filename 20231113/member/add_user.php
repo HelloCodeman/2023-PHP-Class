@@ -9,4 +9,4 @@ $sql = "insert into `users`(`acc`,`pw`,`name`,`email`,`phone`)
 
 $pdo->exec($sql);
 
-header("location:index.php");
+header("Location:index.php");

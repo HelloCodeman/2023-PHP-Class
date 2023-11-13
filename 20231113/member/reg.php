@@ -39,7 +39,7 @@
             </div>
             <div class="input-group my-1">
                 <label class="col-4  input-group-text">連絡電話:</label>
-                <input class="form-control" type="text" name="address" id="address">
+                <input class="form-control" type="text" name="phone" id="phone">
             </div>
             <br>
             <div class="position-absolute bottom-30 start-50 translate-middle-x">

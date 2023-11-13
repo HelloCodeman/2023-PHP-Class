@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
         crossorigin="anonymous"></script>
     <title>會員中心</title>
     <style>
-        .maintext{
+        .maintext {
             text-align: center;
         }
     </style>
@@ -19,9 +23,9 @@
 
 <body>
     <div class="container">
-    <br>
+        <br>
         <h1 class="maintext">使用者資料</h1>
-       
+
         <header class="nav">
             <div class="nav-item col-4"></div>
             <div class="nav-item col-4">
