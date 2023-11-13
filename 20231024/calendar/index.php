@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上月曆</title>
     <style>
+        @media (max-width: 768px) {
+            /* 小型螢幕的樣式 */
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* 中型螢幕的樣式 */
+        }
+
+        @media (min-width: 1025px) {
+            /* 大型螢幕的樣式 */
+        }
+
         body {
             background-image: url('January.jpg');
             background-size: auto;
