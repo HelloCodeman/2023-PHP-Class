@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>線上月曆</title>
     <style>
+        @media (max-width: 768px) {
+            /* 小型螢幕的樣式 */
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* 中型螢幕的樣式 */
+        }
+
+        @media (min-width: 1025px) {
+            /* 大型螢幕的樣式 */
+        }
+
         body {
             background-image: url('January.jpg');
             background-size: auto;
@@ -38,10 +50,19 @@
             align-items: center;
             /* 垂直置中 */
             width: 20vw;
-            margin: 0 auto;
+            margin: auto;
         }
 
         .navbar a {
+            text-decoration: none;
+            /* 去掉連結底線 */
+            color: #fff;
+            /* 連結顏色 */
+            margin: 0 10px;
+            /* 連結之間的間距 */
+        }
+
+        .navbar2 a {
             text-decoration: none;
             /* 去掉連結底線 */
             color: #fff;
@@ -55,6 +76,13 @@
             /* background-color: lemonchiffon; */
             color: rgb(285, 155, 155);
             transform: scale(1.5);
+        }
+
+        .navbar2 a:hover {
+            text-decoration: none;
+            /* background-color: lemonchiffon; */
+            color: rgb(285, 155, 155);
+            /* transform: scale(1.5); */
         }
 
         table {
@@ -215,7 +243,7 @@
                 ?>
             </select>
             <input type="submit" value="顯示該月">
-            <a href="./index.php">回到今天</a>
+            <a href="./index.php">&nbsp;回到今天</a>
         </form>
     </div>
 
