@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>修改</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: linear-gradient(-135deg, rgb(201, 201, 201), #d1c276, #51af99);
+            background-size: 300% 400%;
+            animation: gradient 17s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .text-center {
+            margin: auto;
+        }
+
+        .table>tr,
+        td,
+        th {
+            border: 3px solid rgb(124, 124, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-2 text-center">
+        <p class="display-3" style="font-weight:bold">Edit 修改</p>
+        <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
+        <div class="text-end">
+            <!-- 把fontawesome的code放在button後面 -->
+            <a href="create.html"><button type="button" class="btn btn-success mb-3"><i
+                        class="fa-solid fa-plus"></i>Add</button>
+            </a>
+        </div>
+        <table class="table table-secondary table-striped align-middle table-hover">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th width="20%">img</th>
+                    <th>desc</th>
+                    <th>price</th>
+                    <th width="5%">unit</th>
+                    <th>operate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://picsum.photos/id/98/100/100?grayscale" alt=""></td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>100</td>
+                    <td>元</td>
+                    <td>
+                        <!-- 把fontawesome的code放在button後面 -->
+                        <button type="button" class="btn btn-warning"><i
+                                class="fa-regular fa-pen-to-square"></i>Edit</button>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa-regular fa-pen-to-square"></i>Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="https://picsum.photos/id/908/100/100?grayscale" alt=""></td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>150</td>
+                    <td>元</td>
+                    <td>
+                        <button type="button" class="btn btn-warning"><i
+                                class="fa-regular fa-pen-to-square"></i>Edit</button>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa-regular fa-pen-to-square"></i>Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://picsum.photos/id/598/100/100?grayscale" alt=""></td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>170</td>
+                    <td>元</td>
+                    <td>
+                        <button type="button" class="btn btn-warning"><i
+                                class="fa-regular fa-pen-to-square"></i>Edit</button>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa-regular fa-pen-to-square"></i>Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="https://picsum.photos/id/808/100/100?grayscale" alt=""></td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>110</td>
+                    <td>元</td>
+                    <td>
+                        <a href="edit.html">
+                            <button type="button" class="btn btn-warning"><i
+                                    class="fa-regular fa-pen-to-square"></i>Edit</button></a>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa-regular fa-pen-to-square"></i>Del</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="https://picsum.photos/id/508/100/100?grayscale" alt=""></td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>180</td>
+                    <td>元</td>
+                    <td>
+                        <a href="edit.html">
+                            <button type="button" class="btn btn-warning"><i
+                                    class="fa-regular fa-pen-to-square"></i>Edit</button></a>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa-regular fa-pen-to-square"></i>Del</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
