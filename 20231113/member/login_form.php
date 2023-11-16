@@ -15,6 +15,18 @@
         input[type='password'] {
             outline: none;
         }
+
+        .display-6-custom {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: -25px;
+            /* Adjust this value to move the text up or down */
+        }
+
+        .btn-custom {
+            margin-bottom: -15px;
+            /* Adjust this value to move the text up or down */
+        }
     </style>
 
 </head>
@@ -31,42 +43,41 @@
 
         ?>
         <section class="vh-100" style="background-color: #508bfc;">
-            <div class="container py-5 h-100">
+            <div class="container h-50">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                         <div class="card shadow-2-strong" style="border-radius: 1rem;">
                             <div class="card-body p-5 text-center">
-
-                                <h3 class="mb-4">登入 Sign in</h3>
-
-                                <div class="form-outline mb-4">
-                                    <label for="" class="form-label">帳號</label>
-                                    <input type="text" name="acc" id="acc" class="form-control form-control-lg">
+                                <p class="display-6-custom mb-3">登入 Sign in</p>
+                                <div class="form-outline mb-3">
+                                    <label for="" class="form-label">帳號 Account</label>
+                                    <input type="text" name="acc" id="acc" class="form-control">
                                 </div>
-
                                 <div class="form-outline mb-4">
-                                    <label for="" class="form-label">密碼</label>
-                                    <input type="text" name="pw" id="pw" class="form-control form-control-lg">
+                                    <label for="" class="form-label">密碼 Password</label>
+                                    <input type="text" name="pw" id="pw" class="form-control">
                                 </div>
 
                                 <!-- Checkbox
-                        <div class="form-check mb-4 text-center">
-                            <div class="row justify-content-center align-items-center">
-                                <div class="col-auto">
-                                    <input class="form-check-input" type="checkbox" value="" id="form1Example5" />                                </div>
-                                <div class="col-auto">
-                                    <label class="form-check-label" for="form1Example5">Remember password</label>
+                                <div class="form-check mb-4 text-center">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-auto">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="form1Example5" />
+                                        </div>
+                                        <div class="col-auto">
+                                            <label class="form-check-label" for="form1Example5">Remember
+                                                password</label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="btn-custom">
+                                    <button class="btn btn-primary" type="submit">送出</button>
                                 </div>
-                            </div>
-                        </div> -->
-
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">送出</button>
-                                <hr class="my-4">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </form>
 </body>
