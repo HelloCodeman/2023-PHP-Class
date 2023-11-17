@@ -1,5 +1,12 @@
+<style>
+    h3 {
+        color: crimson;
+        /* 設定<h3>標籤的顏色為紅色 */
+    }
+</style>
+
+<h1>自訂函式基礎</h1>
 <?php
-//自訂函式
 $c = 20;
 function sum($a, $b, $c)
 {
@@ -21,7 +28,7 @@ echo "<hr>";
 echo "總和是:" . sum(56, 77, 4);
 ?>
 
-<h2>不定參數的用法</h2>
+<h1>不定參數的用法</h1>
 <?php
 function sum2(...$arg)
 // {
@@ -41,7 +48,7 @@ echo "<hr>";
 
 ?>
 
-<h4>遇到數值非為數字時會error 改善方法如下:</h4>
+<h3>遇到數值非為數字時會error 改善方法如下</h3>
 
 <?php
 function sum3(...$arg)
@@ -66,5 +73,19 @@ echo "<hr>";
 echo sum3(23, 98, 34, 89, 22, 3, 4);
 echo "<hr>";
 
+?>
+
+<h1>自訂函式預設值</h1>
+<?php
+function sum4($a, $b, $c = 3)
+{
+    $sum = ($a + $b) * $c;
+    echo "$a 、$b , 倍數 $c <br>";
+    return $sum;
+}
+
+echo "總和是" . sum4(10, 15);
+echo "<hr>";
+echo "總和是" . sum4(10, 15, 10);
 
 ?>
