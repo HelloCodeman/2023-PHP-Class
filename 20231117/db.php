@@ -5,7 +5,7 @@ $rows = all('students', ['dept' => '3']);
 dd($rows);
 function all($table = null, $where = '', $other = '')
 {
-    $dsn = "mysql:host=localhost;charset=utf8;dbname=school";
+    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
     $pdo = new PDO($dsn, 'root', '');
     $sql = "select * from `$table` ";
 
