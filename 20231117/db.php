@@ -3,14 +3,18 @@
 $rows = all();
 dd($rows);
 
-function all()
+function all($table=null)
 {
     $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
     $pdo = new PDO($dsn, 'root', '');
 
-    $sql = "select * from `students`";
-    $rows = $pdo->query($sql)->fetchAll();
-    return $rows;
+    if (isset($table) && !empty($table)) {
+        $sql = "select * from `$table`";
+        $rows = $pdo->query($sql)->fetchAll();
+        return $rows;
+    } else {
+        echo "錯誤:沒有指定的資料夾名稱";
+    }
 }
 
 function dd($array)
