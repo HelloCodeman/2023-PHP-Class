@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 include_once "./include/connect.php";
 
 $acc = $_POST['acc'];
