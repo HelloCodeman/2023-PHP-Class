@@ -127,4 +127,5 @@ function retangle_cross($size)
         echo "<br>";
     }
 }
+
 ?>
