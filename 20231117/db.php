@@ -1,17 +1,15 @@
 <?php
 
-$rows = all('students');
+$rows = all('students', ['dept' => '3']);
 
 dd($rows);
-
-function all($table = null, $where = '')
+function all($table = null, $where = '', $other = '')
 {
-    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
+    $dsn = "mysql:host=localhost;charset=utf8;dbname=school";
     $pdo = new PDO($dsn, 'root', '');
     $sql = "select * from `$table` ";
 
     if (isset($table) && !empty($table)) {
-        $sql = "select * from `$table` $where";
 
         if (is_array($where)) {
             /**
@@ -27,13 +25,16 @@ function all($table = null, $where = '')
         } else {
             $sql .= " $where";
         }
+
+        $sql .= $other;
         //echo $sql;
-        $rows = $pdo->query($sql)->fetchAll();
+        $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         return $rows;
     } else {
         echo "錯誤:沒有指定的資料表名稱";
     }
 }
+
 
 function dd($array)
 {
@@ -41,3 +42,5 @@ function dd($array)
     print_r($array);
     echo "</pre>";
 }
+
+?>
