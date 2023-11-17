@@ -1,9 +1,9 @@
 <?php
 
-$rows = all();
+$rows = all('students');
 dd($rows);
 
-function all($table=null)
+function all($table = null,$where='')
 {
     $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
     $pdo = new PDO($dsn, 'root', '');
