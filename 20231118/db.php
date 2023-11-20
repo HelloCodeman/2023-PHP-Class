@@ -13,7 +13,9 @@
 //$up=update("students",'3',['dept'=>'16','name'=>'張明珠']);
 // $up = update("students", ['dept' => 2, 'status_code' => '001'], ['dept' => '99', 'name' => '張明珠']);
 
-insert('dept', ['code' => '112', 'name' => '織品系']);
+//insert('dept', ['code' => '112', 'name' => '織品系']);
+
+del('dept', ['code' => '112', 'name' => '織品系']);
 
 //dd($up);
 function all($table = null, $where = '', $other = '')
@@ -118,6 +120,27 @@ function insert($table, $values)
 
     $sql = $sql . $cols . "values" . $vals;
     //echo $sql;
+    return $pdo->exec($sql);
+}
+
+function del($table, $id)
+{
+    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
+    $pdo = new PDO($dsn, 'root', '');
+    $sql = "delete from `$table` where ";
+
+    if (is_array($id)) {
+        foreach ($id as $col => $value) {
+            $tmp[] = "`$col`='$value'";
+        }
+        $sql .= join(" && ", $tmp);
+    } else if (is_numeric($id)) {
+        $sql .= " `id`='$id'";
+    } else {
+        echo "錯誤:參數的資料型態比須是數字或陣列";
+    }
+    echo $sql;
+
     return $pdo->exec($sql);
 }
 
