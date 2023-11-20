@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <form action="login.php" method="post">
+    <form action="./api/login.php" method="post">
         <?php
 
         if (isset($_GET['error'])) {

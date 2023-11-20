@@ -9,11 +9,8 @@ include_once "./include/connect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         .maintext {
             text-align: center;
@@ -50,17 +47,17 @@ include_once "./include/connect.php";
                 <?php
                 if (isset($_SESSION['user'])) {
                     echo "歡迎光臨 " . $_SESSION['user'];
-                    echo "<a href='logout.php' class='btn btn-info mx-2'>登出</a>";
+                    echo "<a href='./api/logout.php' class='btn btn-info mx-2'>登出</a>";
                 } else {
-                    ?>
+                ?>
                     <a href="reg.php" class="btn btn-primary mx-2">註冊</a>
-                    <a href="login_form.php" class="btn btn-success mx-2">登入</a>
-                    <?php
+                    <a href="./api/logout.php" class="btn btn-success mx-2">登入</a>
+                <?php
                 }
                 ?>
             </div>
         </header>
-        <form action="./update.php" method="post" class="col-4 m-auto">
+        <form action="./member.php" method="post" class="col-4 m-auto">
             <div class="input-group my-1">
                 <label class="col-4  input-group-text">帳號:</label>
                 <input class="form-control" type="text" name="acc" id="acc" value="<?= $user['acc']; ?>">
@@ -86,8 +83,7 @@ include_once "./include/connect.php";
                 <input type="hidden" name="id" id="id" value="<?= $user['id']; ?>">
                 <input class="btn-primary mx-2" type="submit" value="更新">
                 <input class="btn-warning mx-2" type="reset" value="重置">
-                <input class="btn-warning mx-2" type="button" value="刪除"
-                    onclick="location.href='del_user.php?id=<?= $user['id']; ?>'">
+                <input class="btn-warning mx-2" type="button" value="刪除" onclick="location.href='./api/del_user.php?id=<?= $user['id']; ?>'">
             </div>
             <!-- submit會觸發form表單 action後的地方 -->
             <!-- <button>在<form>裡面預設的效果等於submit -->
