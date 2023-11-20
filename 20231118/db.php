@@ -11,9 +11,11 @@
 //dd($rows);
 
 //$up=update("students",'3',['dept'=>'16','name'=>'張明珠']);
-$up = update("students", ['dept' => 2, 'status_code' => '001'], ['dept' => '99', 'name' => '張明珠']);
+// $up = update("students", ['dept' => 2, 'status_code' => '001'], ['dept' => '99', 'name' => '張明珠']);
 
-dd($up);
+insert('dept', ['code' => '112', 'name' => '織品系']);
+
+//dd($up);
 function all($table = null, $where = '', $other = '')
 {
     $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
@@ -95,6 +97,27 @@ function update($table, $id, $cols)
         echo "錯誤:參數的資料型態比須是數字或陣列";
     }
     echo $sql;
+    return $pdo->exec($sql);
+}
+
+function insert($table, $values)
+{
+    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
+    $pdo = new PDO($dsn, 'root', '');
+
+    $sql = "insert into `$table`";
+
+    /* 原生概念
+    $cols = "(``,``,``,``)";
+    $vals = "('','','','')";
+    */
+
+    $sql = "insert into `$table` ";
+    $cols = "(`" . join("`,`", array_keys($values)) . "`)";
+    $vals = "('" . join("','", $values) . "')";
+
+    $sql = $sql . $cols . "values" . $vals;
+    //echo $sql;
     return $pdo->exec($sql);
 }
 
