@@ -1,27 +1,38 @@
 <?php
 
+$dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
+$pdo = new PDO($dsn, 'root', '');
+
 //$rows=all('students',['dept'=>'3']);
 //$row=find('students',10);
-//$row=find('students',['dept'=>'1','graduate_at'=>'23']);
+$row = find('students', ['dept' => '1', 'graduate_at' => '23']);
 //$rows=all('students',['dept'=>'1','graduate_at'=>'23']);
 //echo "<h3>相同條件使用find()</h3>";
 //dd($row);
 //echo "<hr>";;
 //echo "<h3>相同條件使用all()</h3>";
-//dd($rows);
+dd($row);
 
 //$up=update("students",'3',['dept'=>'16','name'=>'張明珠']);
 // $up = update("students", ['dept' => 2, 'status_code' => '001'], ['dept' => '99', 'name' => '張明珠']);
 
 //insert('dept', ['code' => '112', 'name' => '織品系']);
 
-del('dept', ['code' => '112', 'name' => '織品系']);
+//del('dept', ['code' => '112', 'name' => '織品系']);
+
+//del('dept',1);
+function pdo($db)
+{
+    $dsn = "mysql:host=localhost;charset=utf8;dbname=$db";
+    $pdo = new PDO($dsn, 'root', '');
+
+    return $pdo;
+}
 
 //dd($up);
 function all($table = null, $where = '', $other = '')
 {
-    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
-    $pdo = new PDO($dsn, 'root', '');
+    $pdo = pdo('school');
     $sql = "select * from `$table` ";
 
     if (isset($table) && !empty($table)) {
@@ -42,7 +53,7 @@ function all($table = null, $where = '', $other = '')
         }
 
         $sql .= $other;
-        echo 'all=>' . $sql;
+        //echo 'all=>' . $sql;
         $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         return $rows;
     } else {
@@ -52,8 +63,7 @@ function all($table = null, $where = '', $other = '')
 
 function find($table, $id)
 {
-    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
-    $pdo = new PDO($dsn, 'root', '');
+    global $pdo;
     $sql = "select * from `$table` ";
 
     if (is_array($id)) {
@@ -66,7 +76,7 @@ function find($table, $id)
     } else {
         echo "錯誤:參數的資料型態比須是數字或陣列";
     }
-    echo 'find=>' . $sql;
+    //echo 'find=>' . $sql;
     $row = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
     return $row;
 }
@@ -98,7 +108,7 @@ function update($table, $id, $cols)
     } else {
         echo "錯誤:參數的資料型態比須是數字或陣列";
     }
-    echo $sql;
+    //echo $sql;
     return $pdo->exec($sql);
 }
 
@@ -125,8 +135,7 @@ function insert($table, $values)
 
 function del($table, $id)
 {
-    $dsn = "mysql:host=localhost;charset=utf8;dbname=php_school";
-    $pdo = new PDO($dsn, 'root', '');
+    include "pdo.php";
     $sql = "delete from `$table` where ";
 
     if (is_array($id)) {
@@ -139,7 +148,7 @@ function del($table, $id)
     } else {
         echo "錯誤:參數的資料型態比須是數字或陣列";
     }
-    echo $sql;
+    //echo $sql;
 
     return $pdo->exec($sql);
 }
