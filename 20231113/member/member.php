@@ -57,7 +57,7 @@ include_once "./include/connect.php";
                 ?>
             </div>
         </header>
-        <form action="./member.php" method="post" class="col-4 m-auto">
+        <form action="./api/update.php" method="post" class="col-4 m-auto">
             <div class="input-group my-1">
                 <label class="col-4  input-group-text">帳號:</label>
                 <input class="form-control" type="text" name="acc" id="acc" value="<?= $user['acc']; ?>">
@@ -76,18 +76,17 @@ include_once "./include/connect.php";
             </div>
             <div class="input-group my-1">
                 <label class="col-4  input-group-text">連絡電話:</label>
-                <input class="form-control" type="text" name="address" id="address" value="<?= $user['phone']; ?>">
+                <input class="form-control" type="text" name="phone" id="phone" value="<?= $user['phone']; ?>">
             </div>
             <br>
             <div class="position-absolute bottom-30 start-50 translate-middle-x">
                 <input type="hidden" name="id" id="id" value="<?= $user['id']; ?>">
                 <input class="btn-primary mx-2" type="submit" value="更新">
                 <input class="btn-warning mx-2" type="reset" value="重置">
-                <input class="btn-warning mx-2" type="button" value="刪除" onclick="location.href='./api/del_user.php?id=<?= $user['id']; ?>'">
+                <input class="btn-danger mx-2" type="button" value="刪除" onclick="location.href='./api/del_user.php?id=<?= $user['id']; ?>'">
             </div>
             <!-- submit會觸發form表單 action後的地方 -->
             <!-- <button>在<form>裡面預設的效果等於submit -->
-
         </form>
     </div>
 </body>
