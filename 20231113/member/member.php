@@ -29,9 +29,11 @@ include_once "./include/connect.php";
             unset($_SESSION["msg"]);
             echo "</div>";
         }
-
+        /*
         $sql = "select * from users where `acc`='{$_SESSION['user']}'";
         $user = $pdo->query($sql)->fetch();
+        */
+        $user = find('users', ['acc' => "{$_SESSION['user']}"]);
         ?>
 
         <header class="nav">

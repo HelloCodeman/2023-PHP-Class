@@ -33,6 +33,25 @@ function all($table = null, $where = '', $other = '')
     }
 }
 
+function total($table, $id)
+{
+    global $pdo;
+    $sql = "select * from `$table` ";
+
+    if (is_array($id)) {
+        foreach ($id as $col => $value) {
+            $tmp[] = "`$col`='$value'";
+        }
+        $sql .= " where " . join(" && ", $tmp);
+    } else if (is_numeric($id)) {
+        $sql .= " where `id`='$id'";
+    } else {
+        echo "錯誤:參數的資料型態必須是數字或陣列";
+    }
+    //echo 'find=>'.$sql;
+    $row = $pdo->query($sql)->fetchColumn();
+    return $row;
+}
 
 function find($table, $id)
 {
@@ -47,7 +66,7 @@ function find($table, $id)
     } else if (is_numeric($id)) {
         $sql .= " where `id`='$id'";
     } else {
-        echo "錯誤:參數的資料型態比須是數字或陣列";
+        echo "錯誤:參數的資料型態必須是數字或陣列";
     }
     //echo 'find=>'.$sql;
     $row = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
