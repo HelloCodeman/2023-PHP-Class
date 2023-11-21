@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1024px;
+            height: 768px;
+            margin: auto;
+        }
+
+        header,
+        .container,
+        footer,
+        .aside,
+        .aside-top,
+        .aside-bottom,
+        .main,
+        .main-top,
+        .main-bottom {
+            border: 1px solid black;
+        }
+
+        header {
+
+            width: 1000px;
+            height: 65px;
+            border-bottom: none;
+        }
+
+        .container {
+            width: 1000px;
+            height: calc(768px - 65px - 20px);
+            display: flex;
+            border: none;
+        }
+
+        .aside {
+            width: 215px;
+            height: 100%;
+            border: none;
+        }
+
+        .aside-top {
+            width: 100%;
+            height: calc(100% - 25px);
+            border-right: none;
+        }
+
+        .aside-bottom {
+            width: 100%;
+            height: 25px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .main {
+            width: calc(100% - 215px);
+            height: 100%;
+            border: none;
+        }
+
+        .main-top {
+            width: 100%;
+            height: 29px;
+        }
+
+        .main-bottom {
+            width: 100%;
+            height: calc(100% - 29px);
+            border-top: none;
+        }
+
+        footer {
+            width: 1000px;
+            height: 20px;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+
+        <div class="aside">
+            <div class="aside-top"></div>
+            <div class="aside-bottom"></div>
+        </div>
+        <div class="main">
+            <div class="main-top"></div>
+            <div class="main-bottom"></div>
+
+        </div>
+
+
+    </div>
+    <footer></footer>
+</body>
+
+</html>
