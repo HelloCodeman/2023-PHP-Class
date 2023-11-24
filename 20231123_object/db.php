@@ -58,7 +58,16 @@ class DB
         return $row;
     }
 
-    function update($id, $cols)
+    function save($array)
+    {
+        if (isset($array["id"])) {
+            $this->update($array["id"], $array);
+        } else {
+            $this->insert($array);
+        }
+    }
+
+    protected function update($id, $cols)
     {
         $sql = "update `$this->table` set ";
 
@@ -86,7 +95,7 @@ class DB
         return $this->pdo->exec($sql);
     }
 
-    function insert($values)
+    protected function insert($values)
     {
         $sql = "insert into `$this->table` ";
         $cols = "(`" . join("`,`", array_keys($values)) . "`)";
