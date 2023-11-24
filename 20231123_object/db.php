@@ -61,50 +61,24 @@ class DB
     function save($array)
     {
         if (isset($array["id"])) {
-            $this->update($array["id"], $array);
-        } else {
-            $this->insert($array);
-        }
-    }
-
-    protected function update($id, $cols)
-    {
-        $sql = "update `$this->table` set ";
-
-        if (!empty($cols)) {
-            foreach ($cols as $col => $value) {
-                $tmp[] = "`$col`='$value'";
+            $sql = "update `$this->table` set ";
+            if (!empty($cols)) {
+                foreach ($cols as $col => $value) {
+                    $tmp[] = "`$col`='$value'";
+                }
+            } else {
+                echo "錯誤:缺少要編輯的欄位陣列";
             }
+
+            $sql .= join(",", $tmp);
+            $sql .= " where `id`='{$array['id']}'";
         } else {
-            echo "錯誤:缺少要編輯的欄位陣列";
+            $sql = "insert into `$this->table` ";
+            $cols = "(`" . join("`,`", array_keys($array)) . "`)";
+            $vals = "('" . join("','", $array) . "')";
+
+            $sql = $sql . $cols . " values " . $vals;
         }
-
-        $sql .= join(",", $tmp);
-        $tmp = [];
-        if (is_array($id)) {
-            foreach ($id as $col => $value) {
-                $tmp[] = "`$col`='$value'";
-            }
-            $sql .= " where " . join(" && ", $tmp);
-        } else if (is_numeric($id)) {
-            $sql .= " where `id`='$id'";
-        } else {
-            echo "錯誤:參數的資料型態必須是數字或陣列";
-        }
-        // echo $sql;
-        return $this->pdo->exec($sql);
-    }
-
-    protected function insert($values)
-    {
-        $sql = "insert into `$this->table` ";
-        $cols = "(`" . join("`,`", array_keys($values)) . "`)";
-        $vals = "('" . join("','", $values) . "')";
-
-        $sql = $sql . $cols . " values " . $vals;
-
-        //echo $sql;
-
         return $this->pdo->exec($sql);
     }
 
