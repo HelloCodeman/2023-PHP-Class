@@ -31,10 +31,8 @@ echo "<br>";*/
 echo '顯示名稱:'.$animal->name; */
 /* echo "<br>"; */
 
-
 class Dog extends Animal
 {
-
     function sit()
     {
         echo $this->name;
