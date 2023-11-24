@@ -39,6 +39,33 @@ class DB
         }
     }
 
+    function count($where = '', $other = '')
+    {
+        $sql = "select count(*) from `$this->table` ";
+
+        if (isset($this->table) && !empty($this->table)) {
+
+            if (is_array($where)) {
+
+                if (!empty($where)) {
+                    foreach ($where as $col => $value) {
+                        $tmp[] = "`$col`='$value'";
+                    }
+                    $sql .= " where " . join(" && ", $tmp);
+                }
+            } else {
+                $sql .= " $where";
+            }
+
+            $sql .= $other;
+            //echo 'all=>'.$sql;
+            $rows = $this->pdo->query($sql)->fetchColumn();
+            return $rows;
+        } else {
+            echo "錯誤:沒有指定的資料表名稱";
+        }
+    }
+
     function find($id)
     {
         $sql = "select * from `$this->table` ";
@@ -102,6 +129,11 @@ class DB
     }
 }
 
+function q($sql)
+{
+    return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function dd($array)
 {
     echo "<pre>";
@@ -110,5 +142,5 @@ function dd($array)
 }
 
 $student = new DB('students');
-$rows = $student->all();
+$rows = $student->count();
 dd($rows);
