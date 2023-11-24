@@ -127,11 +127,11 @@ class DB
 
         return $this->pdo->exec($sql);
     }
-}
 
-function q($sql)
-{
-    return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    function q($sql)
+    {
+        return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
 function dd($array)
