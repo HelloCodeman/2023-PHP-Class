@@ -101,8 +101,7 @@ class DB
 
     function del($id)
     {
-        global $pdo;
-        $sql = "delete from `$this->$table` where ";
+        $sql = "delete from `$this->table` where ";
 
         if (is_array($id)) {
             foreach ($id as $col => $value) {
@@ -116,7 +115,7 @@ class DB
         }
         //echo $sql;
 
-        return $this->$pdo->exec($sql);
+        return $this->pdo->exec($sql);
     }
 }
 
