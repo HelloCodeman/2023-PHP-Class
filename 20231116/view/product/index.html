@@ -49,11 +49,74 @@
         <p class="display-3" style="font-weight:bold">Hover Rows</p>
         <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
         <div class="text-end">
+            <button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#myModallg">
+                Add modal
+            </button>
             <!-- 把fontawesome的code放在button後面 -->
             <a href="create.html"><button type="button" class="btn btn-success mb-3"><i
                         class="fa-solid fa-plus"></i>Add</button>
             </a>
         </div>
+
+        <div class="modal" id="myModallg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <p class="modal-title" style="text-align: center;">新增</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="container">
+                        <!-- <p class="display-4 text-center" style="font-weight:bold">Create 新增</p> -->
+                        <br>
+                        <form>
+                            <div class="mb-3">
+                                <label for="date" class="form-label fs-3">Date 填表日期</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="mb-3">
+                                <label for="img" class="form-label fs-3">Image 照片電子檔</label>
+                                <input type="file" class="form-control" id="img">
+                            </div>
+                            <div class="mb-3">
+                                <label for="des" class="form-label fs-3">Description 描述</label>
+                                <textarea class="form-control" id="imgdes" rows="3"></textarea>
+                                <!-- textarea標籤並用rows去控制欄位長度 -->
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="price" class="form-label fs-3">Price 價錢</label>
+                                        <input type="text" class="form-control" id="price">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="mb-3">
+                                        <label for="unit" class="form-label fs-3">Unit 單位</label>
+                                        <input type="text" class="form-control" id="unit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i>
+                            送出</button>
+                    </div>
+
+                    <!-- Modal body-end -->
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <table class="table table-secondary table-striped align-middle table-hover">
             <thead>
                 <tr>
