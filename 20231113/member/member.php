@@ -91,6 +91,7 @@ include_once "./include/connect.php";
             <!-- submit會觸發form表單 action後的地方 -->
             <!-- <button>在<form>裡面預設的效果等於submit -->
         </form>
+        <?php include "./include/footer.php"; ?>
     </div>
 </body>
 

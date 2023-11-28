@@ -29,7 +29,8 @@
 </head>
 
 <body>
-    <?php include "./include/header.php"; ?>
+    <div><?php include "./include/header.php"; ?></div>
+
     <form action="./api/login.php" method="post">
         <?php
 
@@ -78,6 +79,7 @@
                 </div>
         </section>
     </form>
+    <?php include "./include/footer.php"; ?>
 </body>
 
 </html>
