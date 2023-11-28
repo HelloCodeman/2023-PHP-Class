@@ -26,7 +26,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">iShop</a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-brain"></i>&nbsp;iShop</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -46,9 +46,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#collapse">iCollapse</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#myModal">iMember</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,6 +60,9 @@
                             <li><a class="dropdown-item" href="#bottom">iUse of Cookies</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#myModal">iMember</a>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Please type here" aria-label="Search">
@@ -76,14 +76,16 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <p class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;會員登入</p>
+                    <p class="modal-title">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;會員登入
+                    </p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="container"></div>
                 <div class="shadow-2-strong" style="border-radius: 1rem;">
-                    <div class="card-body p-3 text-center">
+                    <div class="modal-body p-3 text-center">
                         <div class="form-outline mb-3">
                             <label for="" class="form-label">帳號 Account</label>
                             <input type="text" name="acc" id="acc" class="form-control">
@@ -100,9 +102,6 @@
             </div>
             <!-- Modal body-end -->
             <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
         </div>
     </div>
 
@@ -133,13 +132,14 @@
             </button> -->
         </div>
     </div>
-    <div class="d-flex justify-content-around bd-highlight mb-3 mt-3" style="text-align:center;" id="card">
+    <div class="d-flex justify-content-around bd-highlight mb-3 mt-3" style="text-align:center;">
         <div class="border-black"><img src="https://picsum.photos/id/405/620/500" alt=""><br><button
-                class="btn btn-outline-secondary mt-1 mb-1">iBuy</button></div>
+                class="btn btn-outline-secondary mt-1 mb-1" data-bs-toggle="modal"
+                data-bs-target="#myModal">iBuy</button></div>
         <div class="border-black"><img src="https://picsum.photos/id/665/620/500" alt=""><br><button
-                class="btn btn-outline-secondary mt-1 mb-1">iBuy</div>
+                class="btn btn-outline-secondary mt-1 mb-1" data-bs-toggle="modal" data-bs-target="#myModal">iBuy</div>
         <div class="border-black"><img src="https://picsum.photos/id/115/620/500" alt=""><br><button
-                class="btn btn-outline-secondary mt-1 mb-1">iBuy</div>
+                class="btn btn-outline-secondary mt-1 mb-1" data-bs-toggle="modal" data-bs-target="#myModal">iBuy</div>
     </div>
     <div class="container-fluid mt-3 mb-2" id="collapse">
         <p style="text-align: center;">
@@ -224,6 +224,7 @@
             </div>
         </div>
     </div>
+    <p class="mb-3"></p>
 
 </body>
 
