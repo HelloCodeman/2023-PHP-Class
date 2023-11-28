@@ -1,7 +1,7 @@
       <style>
           .header {
               text-align: center;
-              font-size: 110px;
+              font-size: 80px;
               font-weight: bolder;
           }
       </style>
