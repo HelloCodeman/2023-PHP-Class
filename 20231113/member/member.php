@@ -37,29 +37,7 @@ include_once "./include/connect.php";
         $user = find('users', ['acc' => "{$_SESSION['user']}"]);
         ?>
 
-        <header class="nav">
-            <div class="nav-item col-4"></div>
-            <div class="nav-item col-4">
-                <ul class="d-flex justify-content-evenly">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-            <div class="nav-item col-4">
-                <?php
-                if (isset($_SESSION['user'])) {
-                    echo "歡迎光臨 " . $_SESSION['user'];
-                    echo "<a href='./api/logout.php' class='btn btn-info mx-2'>登出</a>";
-                } else {
-                ?>
-                    <a href="reg.php" class="btn btn-primary mx-2">註冊</a>
-                    <a href="./api/logout.php" class="btn btn-success mx-2">登入</a>
-                <?php
-                }
-                ?>
-            </div>
-        </header>
+    
         <form action="./api/update.php" method="post" class="col-4 m-auto">
             <div class="input-group my-1">
                 <label class="col-4  input-group-text">帳號:</label>
@@ -91,8 +69,8 @@ include_once "./include/connect.php";
             <!-- submit會觸發form表單 action後的地方 -->
             <!-- <button>在<form>裡面預設的效果等於submit -->
         </form>
-        <?php include "./include/footer.php"; ?>
     </div>
+    <?php include "./include/footer.php"; ?>
 </body>
 
 </html>

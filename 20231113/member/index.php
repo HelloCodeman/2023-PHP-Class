@@ -21,8 +21,10 @@ include_once "./include/connect.php";
 </head>
 
 <body>
-    <?php include "./include/header.php"; ?>
-    <?php include "./include/footer.php"; ?>
+    <div class=" min-vh-100 w-100">
+        <?php include "./include/header.php"; ?>
+        <?php include "./include/footer.php"; ?>
+    </div>
 </body>
 
 </html>
