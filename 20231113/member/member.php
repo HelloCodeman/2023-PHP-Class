@@ -20,6 +20,7 @@ include_once "./include/connect.php";
 
 <body>
     <div class="container">
+        <?php include "./include/header.php"; ?>
         <br>
         <h1 class="maintext">使用者資料</h1>
         <?php
