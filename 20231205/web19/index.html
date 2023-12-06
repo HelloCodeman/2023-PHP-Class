@@ -17,22 +17,11 @@
             margin: auto;
         }
 
-        header,
-        .container,
-        footer,
-        .aside,
-        .aside-top,
-        .aside-bottom,
-        .main,
-        .main-top {
-            border: 1px solid black;
-        }
-
         header {
             width: 1000px;
             height: 65px;
+            border: 1px solid black;
             border-bottom: none;
-            border-top: none;
         }
 
         .container {
@@ -44,49 +33,17 @@
         .aside {
             width: 215px;
             height: 100%;
-            border-left: none;
-            border-top: none;
+            border: 1px solid black;
+            border-right: none;
             border-bottom: none;
         }
 
         .aside-top {
             width: 100%;
             height: calc(100% - 25px);
-            border-right: none;
-            border-left: none;
-            border-top: none;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .aside-box {
-            background-image: url(./images/menu1.png);
-            font-family: '標楷體';
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: #000000;
-            /* border: 1px solid black; */
-            border-radius: 3px;
-            margin-top: 5px;
-            padding-top: 5px;
-            width: 200px;
-            height: 35px;
-        }
-
-        .aside-box:hover {
-            background-image: url(./images/menu2.png);
-            font-family: '標楷體';
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: #000000;
-            border-radius: 3px;
-            margin-top: 5px;
-            padding-top: 5px;
-            width: 200px;
-            height: 35px;
         }
 
         .aside-title {
@@ -97,22 +54,38 @@
             color: #FF00FF;
         }
 
+        .aside-box {
+            background-image: url(./images/menu1.png);
+            font-family: '標楷體';
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+            border-radius: 3px;
+            margin-top: 5px;
+            padding-top: 5px;
+            width: 200px;
+            height: 35px;
+        }
+
+        .aside-box:hover {
+            background-image: url(./images/menu2.png);
+        }
+
         .aside-bottom {
             width: 100%;
             height: 25px;
-            border: none;
-        }
-
-        .aside-bottom>p {
+            border-top: 1px solid black;
             font-family: '標楷體';
             text-align: center;
-            margin: auto;
-            vertical-align: auto;
+            font-size: 16px;
+            vertical-align: center;
         }
 
         .main {
             width: calc(100% - 215px);
             height: 100%;
+            border: 1px solid black;
             border-top: none;
             border-left: none;
             border-right: none;
@@ -122,17 +95,18 @@
         .main-top {
             width: 100%;
             height: 29px;
-            border-left: none;
-            border-right: none;
-            border-top: none;
             font-family: '標楷體';
             font-size: 24px;
             color: #0000ff;
+            border: 1px solid black;
         }
 
         .main-bottom {
             width: 100%;
             height: calc(768px - 65px - 29px - 20px);
+            border: 1px solid black;
+            border-top: none;
+            border-bottom: none;
         }
 
         footer {
@@ -141,7 +115,7 @@
             font-family: '標楷體';
             color: #000000;
             font-size: 16px;
-            border-top: none;
+            border: 1px solid black;
         }
 
         iframe {
@@ -181,7 +155,7 @@
                 </div>
             </div>
             <div class="aside-bottom">
-                <p>最近更新日期：2023/12/06</p>
+                最近更新日期：2023/12/06
             </div>
         </div>
         <div class="main">
