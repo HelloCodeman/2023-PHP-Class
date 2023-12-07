@@ -2,10 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
-
 }
-
-body {}
 
 .container-box {
     width: 1024px;
@@ -21,8 +18,6 @@ body {}
     margin: auto;
     border: 1px solid black;
 }
-
-.header>img {}
 
 .container {
     display: flex;
@@ -124,6 +119,4 @@ iframe {
     color: black;
     font-size: 16px;
     text-align: center;
-
-
 }
