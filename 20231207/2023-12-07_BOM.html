@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Window</h2>
+
+    <button type="button" id="myBtn">myBtn</button>
+    <button type="button" id="replaceBtn">replaceBtn</button>
+    <button type="button" id="closeBtn">closeBtn</button>
+
+    <p id="demo"></p>
+
+    <script>
+        // 1.綁定
+        let myBtn = document.getElementById('myBtn');
+        let replaceBtn = document.getElementById('replaceBtn');
+        let closeBtn = document.getElementById('closeBtn');
+
+        // 2.動作 (location.href/location.replace差別可看12/7HackMD筆記)
+        myBtn.addEventListener('click', function () {
+            // window.open('https://hackmd.io/?nav=overview')});
+            window.location.assign("https://www.w3schools.com")});
+            // window.location.href = ("https://www.w3schools.com")});
+      
+        replaceBtn.addEventListener('click', function () {
+            
+            window.location.replace('https://hackmd.io/?nav=overview')
+        }); // replace 無法回到上一頁
+
+        closeBtn.addEventListener('click', function () {
+            window.close();
+        }); // 關閉視窗
+
+        // document.getElementById("demo").innerHTML =
+        //     "Browser inner window width: " + window.innerWidth + "px<br>" +
+        //     "Browser inner window height: " + window.innerHeight + "px" ;
+
+    </script>
+</body>
+
+</html>
