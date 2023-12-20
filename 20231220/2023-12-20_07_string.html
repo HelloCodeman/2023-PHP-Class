@@ -31,11 +31,10 @@
     let substrText = text.substr(3, 5);
     console.log('substrText', substrText);
 
-
     // substring(start, end)
     let substringText = text.substr(3);
     console.log('substringText', substringText);
-    
+
 
     // trim() 清除前後空白
     let noTrimText = "   12345   ";
@@ -47,6 +46,16 @@
     console.log('noTrimText.length', noTrimText.length);
     console.log('trimText', trimText);
     console.log('trimText.length', trimText.length);
+
+    //string to array
+    let textString = "amy,bob,cat";
+    let textArr = textString.split(',');
+    console.log('textString', textString);
+    console.log('textArr', textArr);
+
+    // array to string
+    let arrayToString = textArr.toString();
+    console.log('arrayToString', arrayToString);
 
 
   </script>
