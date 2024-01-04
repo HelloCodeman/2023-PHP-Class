@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jquery Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container w-75 text-center">
+        <br>
+        <h3>Calculator</h3>
+        <div class="row mt-3">
+            <div class="col">
+                <input class="form-control" type="text" name="" id="num1" placeholder="請填數值">
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" name="" id="num2" placeholder="請填數值">
+            </div>
+            <div class="col">
+                <select class="form-control" id="opt" name="">
+                    <option value="0">請選擇</option>
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">*</option>
+                    <option value="4">/</option>
+                    <!-- value寫1234會比寫+-*/還省資料庫空間 -->
+                </select>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="button" id="myBtn">幫我算出來</button>
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" name="" id="resultCol" placeholder="結果">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            const num1 = $('#num1');
+            const num2 = $('#num2');
+            const opt = $('#opt');
+            const myBtn = $('#myBtn');
+            const resultCol = $('#resultCol');
+
+            console.log('num1', num1);
+            console.log('num2', num2);
+            console.log('opt', opt);
+            console.log('myBtn', myBtn);
+            console.log('resultCol', resultCol);
+
+            myBtn.click(function () {
+                let getNum1Value = Number(num1.val());
+                let getNum2Value = Number(num2.val());
+                let getOptValue = Number(opt.val());
+                console.log('getNum1Value', getNum1Value);
+                console.log('getNum1Value typeof', typeof (getNum1Value));
+
+                // string method length 
+                if (num1.val().length <= 0 || num2.val().length <= 0) {
+                    alert('empty?');
+                    return false;
+                }
+
+                console.log('click ok ');
+                console.log('getNum1Value', getNum1Value);
+                console.log('getNum2Value', getNum2Value);
+                console.log('getOptValue', getOptValue);
+                let result = 0;
+                switch (getOptValue) {
+                    case 1:
+                        result = getNum1Value + getNum2Value;
+                        break;
+                    case 2:
+                        result = getNum1Value - getNum2Value;
+                        break;
+                    case 3:
+                        result = getNum1Value * getNum2Value;
+                        break;
+                    case 4:
+                        result = getNum1Value / getNum2Value;
+                        break;
+                    case 0:
+                        alert('請選擇加減乘除')
+
+                    default:
+                        break;
+                }
+
+                console.log('result', result);
+                resultCol.val(result);
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
