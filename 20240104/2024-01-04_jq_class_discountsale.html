@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jquery class travelsale</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    </style>
+</head>
+<style>
+    h1 {
+        position: relative;
+        text-align: center;
+        color: rgb(249, 134, 25);
+        font-style: italic;
+        scale: 1.7;
+        font-family: fantasy;
+        margin-top: 50px;
+    }
+
+    h1:hover {
+        color: rgb(249, 134, 25);
+        font-style: italic;
+        scale: 1.7;
+        text-shadow: 2px 1px 2px rgb(0, 0, 0);
+    }
+
+    .card:hover {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .card {
+        margin: 3px;
+    }
+</style>
+
+<body>
+    <h1>TaiShan Travel</h1>
+    <div class="container mt-3">
+        <div class="row ">
+            <div class="col card mt-5">
+                <img class="card-img-top" src="https://picsum.photos/id/874/300/300" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">溫哥華 Vancouver</h4>
+                    <p class="card-text">西岸最大的城市，連續好幾年獲選為世界上最美麗且適合居住的城市及最佳旅遊的城市。</p>
+                    <button id="" data-price="88000" data-level="C" type="button"
+                        class="btn btn-primary myBtn">點擊取得優惠價</button>
+                    <div id="" class="myBox box text-danger mt-2">
+                        <span id="" class="mySpan">
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card mt-5">
+                <img class="card-img-top" src="https://picsum.photos/id/974/300/300" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">北極 North Pole</h4>
+                    <p class="card-text">北極光村的極光小屋是體驗寒冷星空和北極光的神奇方式，同時舒適地躺在溫暖的床上。</p>
+                    <button id="" data-price="100000" data-level="B" type="button"
+                        class="btn btn-primary myBtn">點擊取得優惠價</button>
+                    <div id="" class="myBox box text-danger mt-2">
+                        <span id="" class="mySpan">
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card mt-5">
+                <img class="card-img-top" src="https://picsum.photos/id/474/300/300" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">冰島 Iceland</h4>
+                    <p class="card-text">冰島最出名的莫過於擁有地球原始的狀態，同時擁有冰川、火山，被稱為「冰與火的國度」</p>
+                    <button id="" data-price="77000" data-level="C" type="button"
+                        class="btn btn-primary myBtn">點擊取得優惠價</button>
+                    <div id="" class="myBox box text-danger mt-2">
+                        <span id="" class="mySpan">
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col card mt-5">
+                <img class="card-img-top" src="https://picsum.photos/id/313/300/300" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">澳洲 Australia</h4>
+                    <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                    <button id="" data-price="50000" data-level="A" type="button"
+                        class="btn btn-primary myBtn">點擊取得優惠價</button>
+                    <div id="" class="myBox box text-danger mt-2">
+                        <span id="" class="mySpan">
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 綁定
+            const myBtn = $('.myBtn');
+            const myBox = $('.myBox');
+            const mySpan = $('.mySpan');
+
+            const levelObj = {
+                'A': 0.7,
+                'B': 0.8,
+                'C': 0.9,
+            };
+            console.log('levelObj', levelObj);
+
+            // init
+            myBox.hide();
+
+            myBtn.click(function () {
+                console.log('myBtn ok');
+                console.log('this', this);
+                let getDataPrice = Number($(this).attr('data-price'));
+                let getDataLevel = $(this).attr('data-level');
+                // let getDataLevel = $(this).data('level');
+                console.log('getDataPrice', getDataPrice);
+                console.log('getDataLevel', getDataLevel);
+                let result = getDataPrice * levelObj[getDataLevel];
+                console.log('result', result);
+
+                const nowCardBody = $(this).parent();
+                const nowMyBox = nowCardBody.find('.myBox');
+                const nowMySpan = nowCardBody.find('.mySpan');
+
+                $(this).remove();
+                // console.log('nowCardBody', nowCardBody);
+                nowMyBox.show();
+                nowMySpan.text(`原價:${getDataPrice} , 優惠價 ${result}`)
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
