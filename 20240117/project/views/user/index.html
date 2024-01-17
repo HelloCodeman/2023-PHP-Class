@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 28px;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-end {
+            text-align: right;
+            margin-right: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center"><span>User</span> List</h3>
+        <div class="text-end">
+            <button type="button">新增</button>
+        </div>
+        <table>
+            <tr>
+                <th width="15%">id</th>
+                <th width="15%">name</th>
+                <th>operate</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>amy</td>
+                <td>
+                    <button type="button">編輯</button>
+                    <button type="button">刪除</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
