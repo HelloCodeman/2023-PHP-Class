@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create</title>
+  <title>新增</title>
   <style>
     table {
       width: 30%;
       margin: 0 auto;
-      font-size: 28px;
+      font-size: 22px;
     }
 
     table,
@@ -44,34 +44,32 @@
 
 <body>
   <div class="container">
-    <h1 class="text-center">Create</h1>
+    <h1 class="text-center">新增</h1>
     <form action="../../api/user/store.php">
       <table>
         <tr>
-          <th width="50%">欄位名稱</th>
+          <th width="40%">欄位名稱</th>
           <th width="">欄位資料</th>
         </tr>
-
         <tr>
           <td>
-            name
+            Account
           </td>
           <td>
-            <input type="text" name="acc" id="">
+            <input type="text" name="acc" id="" style="height: 30px;">
           </td>
         </tr>
-
         <tr>
           <td>
-            password
+            Password
           </td>
           <td>
-            <input type="password" name="pwd" id="">
+            <input type="password" name="pw" id="" style="height: 30px;">
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" value="User Create">
+            <input type="submit" value="新增" style="width: 70px;font-size: 18px;">
           </td>
         </tr>
 
