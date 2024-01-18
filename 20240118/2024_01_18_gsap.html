@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP - tween 補間動畫</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' />
+  <style>
+    body {
+      padding-bottom: 500px;
+    }
+
+    h3 {
+      margin: 20px 0;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
+      width: 50px;
+      height: 50px;
+      background: black;
+      margin: 5px;
+    }
+
+    .box2 {
+      background-color: red;
+    }
+
+    .box3 {
+      background-color: green;
+    }
+
+    .box4 {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>1.選擇目標</h1>
+    <div class="box1"></div>
+
+    <h1>2.選擇群組使用陣列</h1>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box4"></div>
+    <div class="box4"></div>
+
+    <h1>3.設定 CSS 屬性</h1>
+    <div class="box5" style="margin:auto"></div>
+    <p id="word">歌詞如果您電器以外身後業績電視劇一看國內外，你的增長校長年齡品種評分醫學孤獨輕鬆條款，青草湖，起來。</p>
+
+    <h1>4.設定動畫屬性</h1>
+    <div class="box6"></div>
+    <button id="play">play</button>
+    <button id="pause">pause</button>
+  </div>
+
+  <!-- bootstrap -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>></script>
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
+  <!-- 引入 gsap 主程式 -->
+  <script src="./gsap/gsap.js"></script>
+
+  <script>
+    // 1.選擇目標----------------------------
+    // 抓目標有三種方式    
+    const b1 = document.querySelector('.box1'); // 第一種 js
+    const b2 = $('box1') // 第二種 jq
+    const tween1 = gsap.to('.box1', {
+      x: 500,
+      duration: 3
+    }) // 第三種 gsap 推薦 使用css規範的選擇器
+
+    // 2.選擇群組使用陣列---------------------
+    const dom1 = document.querySelectorAll('.box2')
+    const dom2 = document.querySelectorAll('.box3')
+    const dom3 = document.querySelectorAll('.box4')
+
+    const jq1 = $('.box2')
+    const jq2 = $('.box3')
+    const jq3 = $('.box4')
+
+    // const tween2 = gsap.to([jq1, jq2, jq3], {
+    //   x: 500,
+    //   duration: 3
+    // })
+
+    const tween2 = gsap.to('.box2,.box3,.box4', {
+      x: 500,
+      duration: 2
+    })
+
+    // 3.設定 CSS 屬性-----------------------
+    const tween3 = gsap.to('.box5', {
+      x: 100, // transLateX
+      y: 100, // transLateY
+      rotation: 720, // rotate
+      scale: 2, //scale
+      width: 100,
+      height: 150,
+      border: '5px solid lightgrey',
+      boxShadow: '0 0 10px rgba(45,0,0,1)',
+      backgroundColor: 'transparent',
+      backdropFilter: 'blur(2px)',
+      borderRadius: '15px',
+    })
+
+    const word = gsap.to('#word', {
+      // color: 'red',
+      color: 'random([red, grey, lightgreen])', // 隨機顏色 使用random() 裡面放字串
+      fontWeight: 'bolder',
+      fontSize: '1.5rem',
+      fontFamily: '標楷體',
+    })
+
+    // 4.設定動畫屬性-------------------------
+    const tween4 = gsap.to('.box6', {
+      y:-500,
+      duration: 1,
+      delay: 2, // 延遲2秒後開始 為初始撥放的延遲時間
+      // repeat:2, // 重複兩次 共播三次
+      // repeat: -1, // 無限重複
+      // repeatDelay:2, // 重複播放的延遲時間
+      // repeatRefresh: true,
+      // 重複播放時 會繼續前一次的狀態再執行 搭配相對位置使用
+      // 會與repeatDelay衝突而失效 不可同時使用
+      // x:'+=100' // 相對位置
+      // yoyo: true, // 像溜溜球的軌跡
+      ease: "bounce.out", // 回彈
+      ease: "steps(6)", // 分階段位移
+      x:800,
+    })
+  </script>
+</body>
+
+</html>
