@@ -133,11 +133,11 @@
 
     // 4.設定動畫屬性-------------------------
     const tween4 = gsap.to('.box6', {
-      y:-500,
-      duration: 1,
+      y: -500,
+      duration: 2,
       delay: 2, // 延遲2秒後開始 為初始撥放的延遲時間
       // repeat:2, // 重複兩次 共播三次
-      // repeat: -1, // 無限重複
+      repeat: -1, // 無限重複
       // repeatDelay:2, // 重複播放的延遲時間
       // repeatRefresh: true,
       // 重複播放時 會繼續前一次的狀態再執行 搭配相對位置使用
@@ -145,8 +145,17 @@
       // x:'+=100' // 相對位置
       // yoyo: true, // 像溜溜球的軌跡
       ease: "bounce.out", // 回彈
-      ease: "steps(6)", // 分階段位移
-      x:800,
+      // ease: "steps(6)", // 分階段位移
+      x: 800,
+      paused: true,
+    })
+
+    $('#play').on('click', function () {
+      tween4.play()
+    })
+
+    $('#pause').on('click', function () {
+      tween4.pause()
     })
   </script>
 </body>
