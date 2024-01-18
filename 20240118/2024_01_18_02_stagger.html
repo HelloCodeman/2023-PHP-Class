@@ -6,15 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GSAP stagger</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' />
+  <style>
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7 {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      background: black;
+    }
+  </style>
 </head>
 
+
 <body>
+  <div class="container">
+    <h1>Stagger 交錯效果</h1>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+      <div class="box1"></div>
+    </div>
+    <h1>from / fromTo</h1>
+    <h2>from</h2>
+    <div class="box2"></div>
+    <h2>fromTo</h2>
+    <div class="box3"></div>
+  </div>
+
   <!-- bootstrap -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>></script>
   <!-- jQuery -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
   <!-- 引入 gsap 主程式 -->
   <script src="./gsap/gsap.js"></script>
+
+  <script>
+
+    // stagger 交錯效果
+    gsap.to('.box1', {
+      x: 100,
+      duration: 0.3,
+      // stagger: 0.5,
+      stagger: {
+        each: 0.1,
+        from: 0, // 從第幾個開始 也可用'start' 'end' 'center' 'random'
+        repeat: -1, // 無限循環
+        yoyo: true,
+      },
+      backgroundColor: 'random([red,purple,blue,yellow,grey])',
+    })
+
+    // from 指定元素補間動畫從設定狀態到目前狀態
+    gsap.from('.box2', {
+      x: -500,
+      duration: 3
+    })
+
+    //fromTo 指定元素補間動畫從 from設定狀態1到 to設定狀態2
+    gsap.fromTo('.box3', {
+      x: 1200,
+    }, {
+      x: 50,
+      repeat: -1, // 無限循環
+      yoyo: true,
+      duration:2,
+      backgroundColor:'red',
+    })
+
+
+  </script>
 </body>
 
 </html>
