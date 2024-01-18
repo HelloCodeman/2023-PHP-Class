@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP scrollTrigger視差捲動</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' />
+  <style>
+    section {
+      height: 50vh;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="section01">section01</section>
+  <section id="section02">section02</section>
+  <section id="section03">section03</section>
+  <section id="section04">section04</section>
+  <section id="section05">section05</section>
+  <section id="section06">section06</section>
+
+  <!-- bootstrap -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>
+  </script>
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
+  <!-- 引入 gsap 主程式 -->
+  <script src="./gsap/gsap.js"></script>
+  <!-- 引入 scrollTrigger plugin -->
+  <script src="./gsap/ScrollTrigger.js"></script>
+  <!-- <img src="https://picsum.photos/300/200/?random=10"> -->
+
+  <script>
+    // 註冊套件
+    gsap.registerPlugin(ScrollTrigger);
+    $('section').each(function (index, section) {
+      $(section).css({
+        backgroundImage: `url(https://picsum.photos/1920/1080/?random=${index})`,
+      })
+
+      gsap.to(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 50%',
+          end: 'bottom 0%',
+          scrub: true,
+          markers: true
+        },
+        backgroundPosition:'50% -50%',
+        ease:'none'
+      })
+    })
+  </script>
+</body>
+
+</html>
