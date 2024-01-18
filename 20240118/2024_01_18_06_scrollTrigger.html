@@ -59,6 +59,12 @@
 
   <section></section>
 
+  <section id="section03">
+    <h2>3.設定 scrub</h2>
+    <div class="box c1">c1</div>
+  </section>
+
+  <section></section>
   <!-- bootstrap -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>
   </script>
@@ -98,7 +104,6 @@
         trigger: '.b1',
         start: 'top center',
         end: 'bottom 20%',
-        markers: true,
         toggleActions: 'play pause resume reverse',
         /*
         值可為 play,pause,resume,reverse,restart,reset,complete,none
@@ -107,9 +112,37 @@
         onEnterBack => 往回時紅碰紅 scroller-end 碰到 end
         onEnterBack => 往回時綠碰綠 scroller-start 碰到 start
         */
+        // toggleClass: {
+        //   targets: ['.b2'],   // 要加 class 的元素
+        //   className: 'active' // 要加的 class 名稱
+        // },
+        // markers: true,
+
+        onEnter() {
+          $('.b2').addClass('active')
+        },
+        onLeave() {
+          $('.b2').removeClass('active')
+        }
       },
       x: '85vw',
       duration: 3,
+      ease: 'none'
+    })
+
+    // 3.設定 scrub
+    // 將捲動軸的位置與動畫整體進度綁在一起
+    const tween3 = gsap.to('.c1', {
+      scrollTrigger: {
+        trigger: '.c1',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: 20,
+        markers: true,
+      },
+      x: '85vw',
+      rotation: 2500,
+      backgroundColor: 'red',
       ease: 'none'
     })
   </script>
