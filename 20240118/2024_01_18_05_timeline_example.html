@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GSAP 文字動畫 timeline</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' />
+   <!-- 引入google font -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     body {
@@ -48,6 +49,7 @@
     <div class="item">PHP</div>
     <div class="item">MySQL</div>
   </div>
+
   <!-- bootstrap -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.js'></script>
   </script>
@@ -56,8 +58,8 @@
   <!-- 引入 gsap 主程式 -->
   <script src="./gsap/gsap.js"></script>
   <script>
-    // set 設定初始補間動畫的預設值
 
+    // set 設定初始補間動畫的預設值
     gsap.set('.banner', {
       perspective: 300,
     })
@@ -71,8 +73,8 @@
       .from('.item', {
         y: 60,
         rotationX: -90,
-        autoAlpha: 0,
-        stagger: 2,
+        autoAlpha: 0, // 元素會變得完全透明，使其在畫面上不可見
+        stagger: 2, // 每個 .item 元素動畫將以 2 秒的間隔依次執行
       })
 
       .to('.item', {
@@ -81,8 +83,6 @@
         autoAlpha: 0,
         stagger: 2,
       }, 2) // 第三參數只設定動畫在時間軸的位置，表示把動畫放在時間軸2.5秒的位置
-
-    // 可以使用 delay 來完成 但調動一個 其餘的也要跟著調整
 
   </script>
 </body>
