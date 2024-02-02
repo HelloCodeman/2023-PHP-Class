@@ -1,0 +1,1948 @@
+{
+  "cwaopendata": {
+    "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
+    "identifier": "4656ca16-1ae5-412c-baa0-76e0263ab622",
+    "sender": "weather@cwa.gov.tw",
+    "sent": "2024-02-02T10:00:28+08:00",
+    "status": "Actual",
+    "scope": "Public",
+    "msgType": "Issue",
+    "dataid": "C0032-007",
+    "note": "氣象署氣象預報中心製作",
+    "code": null,
+    "source": "MFC",
+    "dataset": {
+      "datasetInfo": {
+        "datasetDescription": "全球都市天氣預報",
+        "datasetLanguage": "zh-TW",
+        "issueTime": "2024-02-02T08:00:00+08:00",
+        "validTime": {
+          "startTime": "2024-02-02T16:00:00+08:00",
+          "endTime": "2024-02-03T16:00:00+08:00"
+        }
+      },
+      "location": [
+        {
+          "locationName": "東京",
+          "stationId": "47662",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陣雪",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "42",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "下雪",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "42",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "11",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "9",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "7",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "5",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "11",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "11",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "8",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "2",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "4",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "0",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "0",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "2",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "2",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "2",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "大阪",
+          "stationId": "47772",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陣雨",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "14",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "11",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "7",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "3",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "3",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "5",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "5",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "4",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "3",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "3",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "首爾",
+          "stationId": "47108",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "下雪",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "42",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "9",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "10",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "7",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "5",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "6",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "7",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "8",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "-1",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "1",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "1",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "-1",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "-3",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "-2",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "0",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "曼谷",
+          "stationId": "48454",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "多雲",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "04",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "33",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "35",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "35",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "33",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "28",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "雅加達",
+          "stationId": "96745",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陣雨",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "14",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "29",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "28",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "27",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "31",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "33",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "吉隆坡",
+          "stationId": "48647",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雷雨",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "18",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雷雨",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "18",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雷雨",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "18",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "33",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "35",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "34",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "35",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "新加坡",
+          "stationId": "48698",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "雨天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "11",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "31",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "30",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "31",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "30",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "30",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "30",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "馬尼拉",
+          "stationId": "98425",
+          "parameterSet": {
+            "parameter": {
+              "parameterName": "地區",
+              "parameterValue": "亞洲、大洋洲"
+            }
+          },
+          "weatherElement": [
+            {
+              "elementName": "Wx",
+              "description": "天氣現象",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "晴天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "01",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": [
+                    {
+                      "value": "陰天",
+                      "measure": "自定義Wx文字"
+                    },
+                    {
+                      "value": "07",
+                      "measure": "自定義Wx編碼"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "Tmax",
+              "description": "最高溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "33",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "32",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "31",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            },
+            {
+              "elementName": "Tmin",
+              "description": "最低溫",
+              "time": [
+                {
+                  "startTime": "2024-02-03T00:00:00+08:00",
+                  "endTime": "2024-02-04T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-04T00:00:00+08:00",
+                  "endTime": "2024-02-05T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-05T00:00:00+08:00",
+                  "endTime": "2024-02-06T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "26",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-06T00:00:00+08:00",
+                  "endTime": "2024-02-07T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-07T00:00:00+08:00",
+                  "endTime": "2024-02-08T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-08T00:00:00+08:00",
+                  "endTime": "2024-02-09T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                },
+                {
+                  "startTime": "2024-02-09T00:00:00+08:00",
+                  "endTime": "2024-02-10T00:00:00+08:00",
+                  "elementValue": {
+                    "value": "25",
+                    "measure": "攝氏"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
