@@ -46,30 +46,29 @@
         data: "data",
         dataType: "json",
         success: function (res) {
-
           let locationname = res.cwaopendata.dataset.location[0].locationName;
-          // let area = res.cwaopendata.dataset.location[0].parameterSet.parameter.parameterValue;
-          // let weather = res.cwaopendata.dataset.location[0].weatherElement[0].time[0].elementValue[0].value;
-          // let date = res.cwaopendata.dataset.location[0].weatherElement[0].time[0].time[0].startTime
+          let area = res.cwaopendata.dataset.location[0].parameterSet.parameter.parameterValue;
+          let weather = res.cwaopendata.dataset.location[0].weatherElement[0].time[0].elementValue[0].value;
+          let date = res.cwaopendata.dataset.location[0].weatherElement[0].time[0].startTime.slice(0, 10)          
 
-          // console.log('res', res);
+          console.log('res', res);
           // console.log('res.cwaopendata.dataset.location[0].locationName', res.cwaopendata.dataset.location[0].locationName);
           // console.log('res.cwaopendata.dataset.location[0].parameterSet.parameter.parameterValue', res.cwaopendata.dataset.location[0].parameterSet.parameter.parameterValue);
           // console.log('res.cwaopendata.dataset.location[0].weatherElement[0].time[0].elementValue[0].value', res.cwaopendata.dataset.location[0].weatherElement[0].time[0].elementValue[0].value);
-          // console.log('res.cwaopendata.dataset.location[0].weatherElement[0].time[0].time[0].startTime', res.cwaopendata.dataset.location[0].weatherElement[0].time[0].startTime.slice(0, 10));
+          // console.log('res.cwaopendata.dataset.location[0].weatherElement[0].time[0].startTime', res.cwaopendata.dataset.location[0].weatherElement[0].time[0].startTime.slice(0, 10));
           let content = `
             <div class="row">
               <div class="col-2">
                ${locationname}
               </div>
               <div class="col-2">
-                amy
+               ${area}
               </div>
               <div class="col-2">
-                10000
+               ${weather}
               </div>
               <div class="col-6">
-                台北 台中 高雄 123
+               ${date}
               </div>
             </div>
           `;
